@@ -650,67 +650,103 @@
         </div>
 
         <!-- Servicio 5 -->
-        <div onclick="openServiceDetail(5)" class="group bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-lg border border-primary/5 flex flex-col justify-between gap-3 cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
-          <div class="flex flex-col gap-2">
-            <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-1">
-              <span class="material-symbols-outlined text-xl">spa</span>
+        <div onclick="openServiceDetail(5)" class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-primary/5 flex flex-col cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="bg-cover bg-center w-full h-44 relative overflow-hidden" 
+               style="background-image: url('images/la-mesa-gramachina-1.jpg')">
+            <span class="absolute top-3 left-3 px-3 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-[11px] font-bold text-primary uppercase tracking-wider">Campestre</span>
+            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1 bg-white text-primary text-xs font-semibold rounded-full shadow">Ver detalles</span>
             </div>
-            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">5. Jardines Temáticos &amp; Quintas</h3>
-            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-              Composiciones estilo Zen, andino silvestre, británico campestre o huertos orgánicos gourmet integrados con armonía espacial.
-            </p>
           </div>
-          <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
-            Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
-          </span>
+          <div class="p-5 flex flex-col flex-1 justify-between gap-3">
+            <div class="flex flex-col gap-2">
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined text-xl">spa</span>
+                <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">5. Jardines Temáticos &amp; Quintas</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
+                Composiciones estilo Zen, andino silvestre, británico campestre o huertos orgánicos gourmet integrados con armonía espacial.
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
+              Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </span>
+          </div>
         </div>
 
         <!-- Servicio 6 -->
-        <div onclick="openServiceDetail(6)" class="group bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-lg border border-primary/5 flex flex-col justify-between gap-3 cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
-          <div class="flex flex-col gap-2">
-            <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-1">
-              <span class="material-symbols-outlined text-xl">wb_sunny</span>
+        <div onclick="openServiceDetail(6)" class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-primary/5 flex flex-col cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="bg-cover bg-center w-full h-44 relative overflow-hidden" 
+               style="background-image: url('images/porto-bari-chia-2.jpg')">
+            <span class="absolute top-3 left-3 px-3 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-[11px] font-bold text-tertiary uppercase tracking-wider">Microclimas</span>
+            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1 bg-white text-primary text-xs font-semibold rounded-full shadow">Ver detalles</span>
             </div>
-            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">6. Jardines de Sol y Sombra</h3>
-            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-              Selección botánica exacta según orientación solar, microclimas bajo dosel arbóreo y patios interiores protegidos del viento.
-            </p>
           </div>
-          <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
-            Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
-          </span>
+          <div class="p-5 flex flex-col flex-1 justify-between gap-3">
+            <div class="flex flex-col gap-2">
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined text-xl">wb_sunny</span>
+                <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">6. Jardines de Sol y Sombra</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
+                Selección botánica exacta según orientación solar, microclimas bajo dosel arbóreo y patios interiores protegidos del viento.
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
+              Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </span>
+          </div>
         </div>
 
         <!-- Servicio 7 -->
-        <div onclick="openServiceDetail(7)" class="group bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-lg border border-primary/5 flex flex-col justify-between gap-3 cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
-          <div class="flex flex-col gap-2">
-            <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-1">
-              <span class="material-symbols-outlined text-xl">compost</span>
+        <div onclick="openServiceDetail(7)" class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-primary/5 flex flex-col cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="bg-cover bg-center w-full h-44 relative overflow-hidden" 
+               style="background-image: url('images/la-mesa-gramachina-2.jpg')">
+            <span class="absolute top-3 left-3 px-3 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-[11px] font-bold text-primary uppercase tracking-wider">Biotecnología</span>
+            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1 bg-white text-primary text-xs font-semibold rounded-full shadow">Ver detalles</span>
             </div>
-            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">7. Nutrición &amp; Sanidad Orgánica</h3>
-            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-              Enmiendas minerales, humus de lombriz californiana y control ecológico de plagas para mantener raíces y follaje vigorosos.
-            </p>
           </div>
-          <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
-            Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
-          </span>
+          <div class="p-5 flex flex-col flex-1 justify-between gap-3">
+            <div class="flex flex-col gap-2">
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined text-xl">compost</span>
+                <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">7. Nutrición &amp; Sanidad Orgánica</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
+                Enmiendas minerales, humus de lombriz californiana y control ecológico de plagas para mantener raíces y follaje vigorosos.
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
+              Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </span>
+          </div>
         </div>
 
         <!-- Servicio 8 -->
-        <div onclick="openServiceDetail(8)" class="group bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-lg border border-primary/5 flex flex-col justify-between gap-3 cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
-          <div class="flex flex-col gap-2">
-            <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-1">
-              <span class="material-symbols-outlined text-xl">fence</span>
+        <div onclick="openServiceDetail(8)" class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-primary/5 flex flex-col cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="bg-cover bg-center w-full h-44 relative overflow-hidden" 
+               style="background-image: url('images/bogota-coservipp-1.jpg')">
+            <span class="absolute top-3 left-3 px-3 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-[11px] font-bold text-tertiary uppercase tracking-wider">Terrazas &amp; Muros</span>
+            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1 bg-white text-primary text-xs font-semibold rounded-full shadow">Ver detalles</span>
             </div>
-            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">8. Muros Verdes &amp; Terrazas</h3>
-            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-              Estructuras hidropónicas vivas y jardines verticales de bajo peso para fachadas, balcones urbanos y terrazas residenciales.
-            </p>
           </div>
-          <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
-            Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
-          </span>
+          <div class="p-5 flex flex-col flex-1 justify-between gap-3">
+            <div class="flex flex-col gap-2">
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined text-xl">fence</span>
+                <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">8. Muros Verdes &amp; Terrazas</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
+                Estructuras hidropónicas vivas y jardines verticales de bajo peso para fachadas, balcones urbanos y terrazas residenciales.
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
+              Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </span>
+          </div>
         </div>
 
       </div>
@@ -1492,49 +1528,49 @@
       5: {
         title: "Jardines Temáticos: Casas Campestres, Quintas & Zen",
         category: "Estilo & Vanguardia",
-        image: "images/mosquera-los-pinos-5.jpg",
-        desc: "Creamos ambientes conceptuales a la medida: desde la integración de casas quintas modernas con macizos de begonias y achiras, hasta huertos culinarios y jardines zen.",
+        image: "images/la-mesa-gramachina-1.jpg",
+        desc: "Creamos ambientes conceptuales a la medida: desde la integración de casas quintas modernas con macizos de begonias y achiras, hasta huertos culinarios y céspedes de alta densidad.",
         features: [
+          "Instalación y adaptación de césped tecnificado (gramachina, kikuyo y trenza).",
           "Macizos perimetrales de begonias, hortensias y cortaderias.",
           "Huertos orgánicos en cajoneras elevadas de madera inmunizada.",
-          "Jardines campestres con rosas andinas y borduras florales perennes.",
-          "Atracción de aves nativas (colibríes y mirlas sabaneras)."
+          "Jardines campestres con rosas andinas y borduras florales perennes."
         ]
       },
       6: {
         title: "Jardines Especializados de Sol Directo y Sombra",
         category: "Adaptación Botánica",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAq0YO3VVQURZ9IkIOC905t0naJpQB7mZvb0RIEZOPV2lC0j5jXqgZhFB490ds0MFkItw3PNKXSR7DNv-1JH3M0CN2-9lvmz87fz9IcSr3GZJEvY_DihKr5uYPRseBpqlipQCh7sjnAPeXq0zqg8WiMNXEtszG0cMk3Q3htKtYSqKcN1BrsGWD5VJb1PSgIZ24wlpMHBdWI11z_uMK9CdMFlTlcZsFy4sUIjS_4WlQNAlH-sTyZfIK2",
-        desc: "Cada rincón tiene una microclima específico. Analizamos la trayectoria del sol a lo largo del año para sembrar exactamente las plantas que florecerán sin quemarse ni marchitarse.",
+        image: "images/porto-bari-chia-2.jpg",
+        desc: "Cada rincón tiene un microclima específico. Diseñamos franjas y macizos con contraste botánico exacto según la orientación solar para que florezcan sin marchitarse.",
         features: [
           "Para sombra húmeda: helechos arbóreos, calas, begonias y monsteras.",
-          "Para sol intenso: agapantos, salvias, achiras, durantas y lavandas.",
+          "Para sol intenso: suculentas, agapantos, salvias, achiras y margaritas.",
           "Sustratos con retención hídrica diferenciada según zona.",
-          "Coberturas vegetales tapizantes como sustitutos de césped en sombra."
+          "Coberturas vegetales y corteza/mulch protector contra la evaporación."
         ]
       },
       7: {
         title: "Nutrición Orgánica y Sanidad Vegetal Ecológica",
         category: "Biotecnología & Suelos",
-        image: "images/mosquera-los-pinos-3.jpg",
-        desc: "El secreto de un jardín verde y tupido radica en la salud microbiológica de su tierra. Usamos fertilizantes 100% orgánicos, micorrizas y caldos minerales protectores.",
+        image: "images/la-mesa-gramachina-2.jpg",
+        desc: "El secreto de un jardín verde y tupido radica en la salud microbiológica de su tierra. Usamos fertilizantes 100% orgánicos, micorrizas y enmiendas minerales enriquecidas.",
         features: [
-          "Aplicación de humus de lombriz líquido y sólido.",
+          "Nivelación agronómica y perfilado de terreno con compost enriquecido.",
+          "Aplicación de humus de lombriz líquido y sólido con enraizadores.",
           "Corrección de pH en suelos arcillosos o excesivamente ácidos.",
-          "Control biológico de pulgones, babosas, orugas y hongos foliares.",
-          "Inoculación de microorganismos benéficos para raíces fuertes."
+          "Control biológico de plagas y hongos foliares."
         ]
       },
       8: {
         title: "Muros Verdes Hidropónicos y Terrazas Biofílicas",
-        category: "Paisajismo Vertical",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCMWis3caLHWpuzM96J5FZvCMlJplknmw9n6v6Cpy6CvWb-xGpJhVo60_n4ymYtdlgi99pzSd8rZjX3HmHffP1ZZQLYhGFzcTwlgTi3jNPOTcHq3pIHpbx6wbGmr4PRMm4hztZ2TTWevJ_J4SSO4sICGfYPLvXH3RX5v_MhivfAJq65WyLX0amjKAew2-DJZTgH-nWQNTdWZbmETrX3AT_qXfzaIZN4UFirQRsNZWLrcjSQf7OrSN0J",
-        desc: "Sistemas modulares verticales de bajo peso diseñados para balcones, terrazas de apartamentos y muros divisorios en Bogotá y Sabana.",
+        category: "Paisajismo Vertical & Corporativo",
+        image: "images/bogota-coservipp-1.jpg",
+        desc: "Sistemas modulares verticales, jardineras contemporáneas y macetas de diseño para balcones, terrazas de apartamentos y sedes corporativas en Bogotá y Sabana.",
         features: [
-          "Estructura liviana de aluminio y fieltros no degradables.",
-          "Riego por recirculación cerrada sin riesgo de filtraciones a vecinos.",
-          "Plantas purificadoras de aire y resistentes a las corrientes de aire.",
-          "Aislamiento térmico y sonoro natural para tu vivienda."
+          "Jardineras estructurales en concreto contemporáneo y macetas cónicas de autor.",
+          "Estructura liviana de muros verdes para fachadas y balcones.",
+          "Riego por recirculación cerrada sin riesgo de filtraciones.",
+          "Plantas purificadoras de aire y aislamiento acústico vegetal."
         ]
       }
     };
