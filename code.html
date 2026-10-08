@@ -1,549 +1,1788 @@
-<!DOCTYPE html><html lang="es" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><title>Jardineros Nacionales – Dirigido por Nicanor Torres | Paisajismo y Jardinería</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,400&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
-  darkMode: "class",
-  theme: {
-    extend: {
-      "colors": {
-        "tertiary": "#4e3518",
-        "on-surface-variant": "#414942",
-        "on-tertiary-fixed": "#2b1701",
-        "surface-container": "#e6f1e7",
-        "surface": "#f2fcf2",
-        "on-surface": "#151e18",
-        "on-primary-fixed": "#00210f",
-        "primary": "#144227",
-        "on-tertiary-container": "#e4bd96",
-        "surface-bright": "#f2fcf2",
-        "outline": "#717971",
-        "surface-container-lowest": "#ffffff",
-        "on-tertiary-fixed-variant": "#5c4124",
-        "secondary": "#3b6a1e",
-        "error-container": "#ffdad6",
-        "on-primary": "#ffffff",
-        "on-tertiary": "#ffffff",
-        "on-secondary-fixed": "#092100",
-        "on-background": "#151e18",
-        "on-secondary-container": "#3f6e22",
-        "surface-variant": "#dbe5dc",
-        "tertiary-container": "#684b2d",
-        "surface-tint": "#3b684a",
-        "inverse-primary": "#a1d2ad",
-        "on-error": "#ffffff",
-        "on-error-container": "#93000a",
-        "on-secondary": "#ffffff",
-        "inverse-surface": "#29332c",
-        "tertiary-fixed": "#ffdcbc",
-        "on-secondary-fixed-variant": "#245105",
-        "surface-container-highest": "#dbe5dc",
-        "surface-dim": "#d2ddd3",
-        "error": "#ba1a1a",
-        "secondary-container": "#b8ef93",
-        "secondary-fixed-dim": "#a0d57c",
-        "primary-fixed-dim": "#a1d2ad",
-        "outline-variant": "#c1c9c0",
-        "primary-container": "#2d5a3d",
-        "inverse-on-surface": "#e9f3ea",
-        "primary-fixed": "#bceec8",
-        "background": "#f2fcf2",
-        "surface-container-low": "#ecf6ec",
-        "secondary-fixed": "#bbf296",
-        "surface-container-high": "#e1ebe1",
-        "on-primary-fixed-variant": "#224f33",
-        "tertiary-fixed-dim": "#e7bf99",
-        "on-primary-container": "#9ed0ab"
-      },
-      "borderRadius": {
-        "DEFAULT": "0.25rem",
-        "lg": "0.5rem",
-        "xl": "0.75rem",
-        "full": "9999px"
-      },
-      "spacing": {
-        "gutter-mobile": "1rem",
-        "space-sm": "0.5rem",
-        "space-md": "1rem",
-        "gutter": "1.5rem",
-        "space-2xl": "4rem",
-        "space-xs": "0.25rem",
-        "margin-mobile": "1.25rem",
-        "space-xl": "2.5rem",
-        "space-lg": "1.5rem",
-        "space-3xl": "6rem",
-        "margin": "3rem"
-      },
-      "fontFamily": {
-        "label-caps": ["Inter"],
-        "headline-sm": ["Playfair Display"],
-        "headline-lg": ["Playfair Display"],
-        "body-sm": ["Inter"],
-        "headline-lg-mobile": ["Playfair Display"],
-        "display-hero-mobile": ["Playfair Display"],
-        "display-hero": ["Playfair Display"],
-        "body-md": ["Inter"],
-        "body-lg": ["Inter"],
-        "title-editorial": ["Playfair Display"],
-        "label-interactive": ["Inter"],
-        "headline-md": ["Playfair Display"]
-      },
-      "fontSize": {
-        "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600"}],
-        "headline-sm": ["22px", {"lineHeight": "30px", "fontWeight": "500"}],
-        "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
-        "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}],
-        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
-        "display-hero-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
-        "display-hero": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
-        "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
-        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-        "title-editorial": ["18px", {"lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "600"}],
-        "label-interactive": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
-        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}]
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Jardineros Nacionales – Dirigido por Nicanor Torres | Paisajismo y Jardinería en Bogotá y Sabana</title>
+  <meta name="description" content="Paisajismo de autor y jardinería integral en Bogotá, Chía, Cajicá, Sopó, La Calera, Mosquera y Cundinamarca. Dirección botánica por Nicanor Torres.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#144227",
+            "primary-container": "#2d5a3d",
+            "primary-fixed": "#bceec8",
+            "primary-fixed-dim": "#a1d2ad",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#9ed0ab",
+            "on-primary-fixed": "#00210f",
+            "on-primary-fixed-variant": "#224f33",
+            "secondary": "#3b6a1e",
+            "secondary-container": "#b8ef93",
+            "secondary-fixed": "#bbf296",
+            "secondary-fixed-dim": "#a0d57c",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#3f6e22",
+            "on-secondary-fixed": "#092100",
+            "on-secondary-fixed-variant": "#245105",
+            "tertiary": "#4e3518",
+            "tertiary-container": "#684b2d",
+            "tertiary-fixed": "#ffdcbc",
+            "tertiary-fixed-dim": "#e7bf99",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#e4bd96",
+            "on-tertiary-fixed": "#2b1701",
+            "on-tertiary-fixed-variant": "#5c4124",
+            "surface": "#f2fcf2",
+            "surface-dim": "#d2ddd3",
+            "surface-bright": "#f2fcf2",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#ecf6ec",
+            "surface-container": "#e6f1e7",
+            "surface-container-high": "#e1ebe1",
+            "surface-container-highest": "#dbe5dc",
+            "surface-variant": "#dbe5dc",
+            "on-surface": "#151e18",
+            "on-surface-variant": "#414942",
+            "outline": "#717971",
+            "outline-variant": "#c1c9c0",
+            "background": "#f2fcf2",
+            "on-background": "#151e18",
+            "whatsapp": "#25D366"
+          },
+          fontFamily: {
+            "sans": ["Inter", "sans-serif"],
+            "serif": ["Playfair Display", "serif"],
+            "headline": ["Playfair Display", "serif"],
+            "body": ["Inter", "sans-serif"]
+          },
+          spacing: {
+            "gutter-mobile": "1rem",
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-2xl": "4rem",
+            "space-3xl": "6rem"
+          }
+        }
       }
     }
-  }
-}</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}@keyframes pulse-subtle{0%,100%{transform:scale(1);}50%{transform:scale(1.04);}}</style></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen relative antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><img alt="Logo Jardineros Nacionales con Grillo" class="h-8 w-auto object-contain" src="assets/logo.png"><div class="flex flex-col"></div></div><div class="flex items-center gap-space-xs"><a class="min-h-[44px] px-space-md py-space-xs rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed flex items-center gap-space-xs font-label-interactive text-label-interactive transition-colors" href="https://wa.me/573214165095" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span class="hidden sm:inline">Cotizar</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface pb-36"><div class="flex flex-col w-full">
-<!-- 1. HERO SECTION -->
-<section class="relative w-full overflow-hidden bg-primary-container text-on-primary">
-<div class="bg-cover bg-center w-full min-h-[520px] flex flex-col justify-end p-margin-mobile relative" data-alt="Expansive luxury private estate garden in the Andean savannah of Bogota Colombia, featuring sculpted stone pathways, vivid blue and white hydrangeas, deep green ferns, Andean alder trees in soft mist morning daylight, architectural landscape design, natural soil and verdant manicured lawn with dew" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCKexzcskqlFFZPnWR6Aqk-XmDbUYnjcbOeqsYe1rPqGyXUtjdz8yg1qpjCzG4s88NC3TjFNmWaTXH4R15IeNzI44-FsQSx3WQFZeAuwi74ZVpe4DzwxPS4IrXczCDyGlSfJQcRxxsnDZJt_uqolecSA0WIuo1WRx_TgI7PNg_JoKvJEMDUn6wj3o_1c26mgNqGYHol-Ju5ZrCbfczlLVzZw4fupDr35zpOIBp1AcxwJaGWUBrRrIbU')">
-<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-primary/20"></div>
-<div class="relative z-10 flex flex-col gap-space-md max-w-xl pb-space-lg">
-<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest/20 backdrop-blur-md self-start text-on-primary">
-<span class="text-[14px]">🌿</span>
-<span class="font-label-caps text-label-caps tracking-wider uppercase">Paisajismo Premium en Bogotá y Sabana</span>
-</div>
-<h1 class="font-display-hero-mobile text-display-hero-mobile text-on-primary leading-tight">
-          Creamos y cuidamos jardines que dan vida a tus espacios
-        </h1>
-<p class="font-body-md text-body-md text-surface-container-high leading-relaxed">
-          Paisajismo de autor y jardinería integral en Bogotá, Chía, Cajicá, La Calera y Cundinamarca. Transformamos patios, fincas, terrazas y conjuntos residenciales con maestría botánica andina.
-        </p>
-<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm pt-space-xs">
-<a class="min-h-[48px] px-space-lg py-space-sm rounded-full bg-[#25D366] text-white flex items-center justify-center gap-space-xs font-label-interactive text-label-interactive shadow-md active:scale-95 transition-transform" href="https://wa.me/573214165095?text=Hola%20Jardineros%20Nacionales,%20quisiera%20solicitar%20una%20cotizaci%C3%B3n%20para%20mi%20jard%C3%ADn" rel="noopener noreferrer" target="_blank">
-<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.58 1.968.928 3.149.929 3.182 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.146-.525-1.745-.722-2.884-2.484-2.971-2.6-.088-.117-.704-.937-.704-1.787 0-.85.443-1.268.601-1.442.158-.173.344-.216.459-.216.115 0 .23 0 .331.006.107.006.251-.041.392.298.144.346.49 1.196.533 1.282.043.086.072.187.014.302-.057.115-.086.187-.172.287-.086.101-.182.226-.26.303-.086.086-.176.18-.076.352.101.172.447.737.96 1.194.66.588 1.216.771 1.388.857.172.086.273.072.374-.044.101-.115.43-.502.545-.674.115-.172.23-.144.387-.086.158.058.991.467 1.163.553.172.086.287.129.33.201.043.072.043.417-.101.822zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.436 5.176L2 22l4.957-1.397C8.421 21.493 10.15 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"></path></svg>
-<span class="">Solicitar cotización</span>
-</a>
-<a class="min-h-[48px] px-space-lg py-space-sm rounded-full bg-surface-container-lowest/15 backdrop-blur-sm text-on-primary hover:bg-surface-container-lowest/25 flex items-center justify-center gap-space-xs font-label-interactive text-label-interactive transition-colors" data-path="servicios" href="#">
-<span class="">Ver servicios</span>
-<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
-</a>
-</div>
-</div>
-</div>
-</section>
-<!-- 2. FRANJA DE CONFIANZA / STATS -->
-<section class="w-full px-margin-mobile -mt-space-md relative z-20">
-<div class="grid grid-cols-2 gap-space-xs bg-surface-container-lowest rounded-xl p-space-md shadow-xl text-on-surface">
-<div class="flex flex-col p-space-xs">
-<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-space-xs">
-<span class="material-symbols-outlined text-[18px]">nature</span>
-</div>
-<span class="font-label-caps text-label-caps text-tertiary uppercase">Cobertura</span>
-<span class="font-headline-sm text-[16px] text-primary leading-tight font-medium mt-0.5">Bogotá y Cundinamarca</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Clima frío y templado</span>
-</div>
-<div class="flex flex-col p-space-xs">
-<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary mb-space-xs">
-<span class="material-symbols-outlined text-[18px]">palette</span>
-</div>
-<span class="font-label-caps text-label-caps text-tertiary uppercase">Exclusividad</span>
-<span class="font-headline-sm text-[16px] text-primary leading-tight font-medium mt-0.5">100% Personalizado</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Nativas y adaptables</span>
-</div>
-<div class="flex flex-col p-space-xs pt-space-sm">
-<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary mb-space-xs">
-<span class="material-symbols-outlined text-[18px]">speed</span>
-</div>
-<span class="font-label-caps text-label-caps text-tertiary uppercase">Agilidad</span>
-<span class="font-headline-sm text-[16px] text-primary leading-tight font-medium mt-0.5">Respuesta en 24h</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Visitas y diagnóstico</span>
-</div>
-<div class="flex flex-col p-space-xs pt-space-sm">
-<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-space-xs">
-<span class="material-symbols-outlined text-[18px]">verified</span>
-</div>
-<span class="font-label-caps text-label-caps text-tertiary uppercase">Trayectoria</span>
-<span class="font-headline-sm text-[16px] text-primary leading-tight font-medium mt-0.5">+15 Años</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">450+ jardines vivos</span>
-</div>
-</div>
-</section>
-<!-- 3. SERVICIOS DESTACADOS -->
-<section class="w-full px-margin-mobile pt-space-xl flex flex-col gap-space-md">
-<div class="flex flex-col gap-space-xs">
-<div class="inline-flex items-center gap-space-xs self-start px-space-md py-space-xs rounded-full bg-surface-container-highest text-primary font-label-caps text-label-caps uppercase">
-<span class="material-symbols-outlined text-[14px]">potted_plant</span>
-<span class="">Maestría Botánica</span>
-</div>
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Servicios Especializados</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">Soluciones integrales diseñadas para resistir los cambios térmicos de la Sabana y realzar el valor arquitectónico de tu inmueble.</p>
-</div>
-<div class="flex flex-col gap-space-sm">
-<!-- Servicio 1 -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
-<div class="bg-cover bg-center w-full h-36 relative" data-alt="Luxury residential landscape design in Chía Colombia featuring manicured natural grass, volcanic stone borders, native agapanthus and flowering Andean shrubs bathed in gentle afternoon sun" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZ5i1I4UhFo9hZQ24QXk0dLQ2d6vwHJ5doM8YkQQcOKqqwwN8QAbM9j_YZAD4zJo9L95d2W1WrGEnGFDnTP45ttTJTo4tcxZ9eaGRGHqjXIjj9pZx7mnp5UUqbOqJE_5s9WhaC2h-PZYBvPp1YBm3Ao6mLvpJjQLDRMrPAM-SX9mq5EcVM1RtTm210Its1_2tNZoM3SBMdn4KmHcyYMwPD3YZ2MGqkWqp1IIBLcWexzBQhS7mK5_ZP')">
-<span class="absolute top-2 left-2 px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 font-label-caps text-label-caps text-primary uppercase">Integral</span>
-</div>
-<div class="p-space-md flex flex-col gap-space-xs">
-<div class="flex items-center gap-space-xs text-secondary">
-<span class="material-symbols-outlined text-[20px]">architecture</span>
-<h3 class="font-title-editorial text-title-editorial text-on-surface">1. Paisajismo y jardinería integral</h3>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Diseño paisajístico de autor, modelado topográfico y siembra selectiva para fincas, casas de campo y zonas comunes.</p>
-</div>
-</div>
-<!-- Servicio 2 -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
-<div class="bg-cover bg-center w-full h-36 relative" data-alt="Gardener skillfully aerating and nourishing soil with organic compost around deep green high Andean bushes in a Sopó residential garden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAjtx-j0y0Jtk6LVok2C6JgMQ08iezPYC16I2DCe9gboJglXOEQp8kSpI5qRECCBIZsdC_b7gfabdCeuACX3hRqDQwITHAEpTktQ1D4087V-6dwl4FotVSQHMUNVh7daX0y5gwPZoJk9XS3YaTnwMa7Xi6PEiopLrwWCkZFPUoyiyiLfU12ZDMusmyoyeh74JFWPuOaKFIbTM-PJvXCNPD9yihQBGyF5S4jCycchSm95bIHVRcBKG0m')">
-<span class="absolute top-2 left-2 px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 font-label-caps text-label-caps text-tertiary uppercase">Regeneración</span>
-</div>
-<div class="p-space-md flex flex-col gap-space-xs">
-<div class="flex items-center gap-space-xs text-secondary">
-<span class="material-symbols-outlined text-[20px]">eco</span>
-<h3 class="font-title-editorial text-title-editorial text-on-surface">2. Mantenimiento y recuperación de jardines</h3>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Rescate de césped amarillento, desyerbe especializado, abonado orgánico y fertilización foliar balanceada.</p>
-</div>
-</div>
-<!-- Servicio 3 -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
-<div class="bg-cover bg-center w-full h-36 relative" data-alt="Automated drip irrigation system delicately spraying water droplets over lush garden flowerbeds and ferns during early morning mist in Bogota" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAw1O-ooFdXc8TkdQDCmMApenpF_UThfm7Hxg40pwNcrs9S06arqBH0A4e9k5lhb0lE1ef0xDjok1mkjv9XU4qbkaIYvOK__B7hMyjaIr43aHUY2d2jn26FE_GIoVdPEdzHzwuhTArQO5krNGT1eZseccDE2Fywct-O--Yc0MwVvggNngowhbzvEYbR1zkWQg51uSyJhQhHRtw1HrRx3iqIfSs-E9XVqGHnXQ2qgJeA4dPDW6H4jNcM')">
-<span class="absolute top-2 left-2 px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 font-label-caps text-label-caps text-primary uppercase">Tecnología</span>
-</div>
-<div class="p-space-md flex flex-col gap-space-xs">
-<div class="flex items-center gap-space-xs text-secondary">
-<span class="material-symbols-outlined text-[20px]">water_drop</span>
-<h3 class="font-title-editorial text-title-editorial text-on-surface">3. Riego tecnificado por goteo y aspersión</h3>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Automatización inteligente que optimiza el consumo hídrico y garantiza humedad continua ante las heladas de la sabana.</p>
-</div>
-</div>
-<!-- Servicio 4 -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
-<div class="bg-cover bg-center w-full h-36 relative" data-alt="Professional arborist safely pruning high branches of an Andean oak and eucalyptus tree with climbing gear in La Calera forest setting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8HtH3YqNPIU_eSWacy3el0jbYtUUFEAoOunEAVwph_RZizgV8sTEDe8CzETqcGu3CsZL2k1H9F_RxyIwWwhbpzY3W-uNrCtsGXnRd8od6qoqT2cRnMRhWOstYEmtjfrDjkb7gXwhM7W3v_T7Bc_q5yxdf9OcU9zYp5qB3fHOnZa0PnikaBnyRrmcofpDb-o8TsOxYGbvewTqD53vN6H5MJ6kA3TdYYJSe_SvGyvyY0qHdlus4GuZQ')">
-<span class="absolute top-2 left-2 px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 font-label-caps text-label-caps text-tertiary uppercase">Seguridad</span>
-</div>
-<div class="p-space-md flex flex-col gap-space-xs">
-<div class="flex items-center gap-space-xs text-secondary">
-<span class="material-symbols-outlined text-[20px]">content_cut</span>
-<h3 class="font-title-editorial text-title-editorial text-on-surface">4. Poda técnica y tala controlada</h3>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Poda de formación, aclareo y retiro seguro de árboles de gran envergadura cumpliendo protocolos ambientales y de seguridad laboral.</p>
-</div>
-</div>
-<!-- Servicio 5 -->
-<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
-<div class="flex items-center gap-space-xs text-secondary">
-<span class="material-symbols-outlined text-[20px]">spa</span>
-<h3 class="font-title-editorial text-title-editorial text-on-surface">5. Jardines temáticos</h3>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Composiciones estilo Zen, andino silvestre, británico campestre o huertos orgánicos gourmet integrados con armonía.</p>
-</div>
-<!-- Servicio 6 -->
-<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
-<div class="flex items-center gap-space-xs text-secondary">
-<span class="material-symbols-outlined text-[20px]">wb_sunny</span>
-<h3 class="font-title-editorial text-title-editorial text-on-surface">6. Jardines adaptables a sol y sombra</h3>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Selección de especies según orientación solar, microclimas bajo dosel arbóreo y patios interiores protegidos.</p>
-</div>
-<!-- Servicio 7 -->
-<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
-<div class="flex items-center gap-space-xs text-secondary">
-<span class="material-symbols-outlined text-[20px]">compost</span>
-<h3 class="font-title-editorial text-title-editorial text-on-surface">7. Nutrición orgánica y sanidad vegetal</h3>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Enmiendas minerales, humus de lombriz y control ecológico de plagas para mantener plantas hidratadas y resistentes.</p>
-</div>
-<!-- Servicio 8 -->
-<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
-<div class="flex items-center gap-space-xs text-secondary">
-<span class="material-symbols-outlined text-[20px]">fence</span>
-<h3 class="font-title-editorial text-title-editorial text-on-surface">8. Muros verdes y jardines verticales</h3>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Estructuras hidropónicas vivas y muros vegetales para fachadas, balcones urbanos y terrazas residenciales de Bogotá.</p>
-</div>
-</div>
-<a class="inline-flex items-center justify-center gap-space-xs py-space-sm px-space-md rounded-full bg-surface-container-high text-primary font-label-interactive text-label-interactive hover:bg-surface-container transition-colors self-start mt-space-xs" data-path="servicios" href="#">
-<span class="">Conoce todos los servicios en detalle</span>
-<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</a>
-</section>
-<!-- 4. VISTA PREVIA DE GALERÍA -->
-<section class="w-full px-margin-mobile pt-space-2xl flex flex-col gap-space-md">
-<div class="flex flex-col gap-space-xs">
-<div class="inline-flex items-center gap-space-xs self-start px-space-md py-space-xs rounded-full bg-surface-container-highest text-primary font-label-caps text-label-caps uppercase">
-<span class="material-symbols-outlined text-[14px]">photo_library</span>
-<span class="">Portfolio Seleccionado</span>
-</div>
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Nuestros Proyectos Vivos</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">Una mirada a los espacios campestres y urbanos que florecen bajo nuestra dirección botánica.</p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
-<!-- Proyecto 1 -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
-<div class="bg-cover bg-center w-full h-48 relative" data-alt="Wild mountain landscape garden in La Calera Colombia overlooking Andean mountains, featuring native tussock grasses, purple salvias, lavender, and rough stone stairs" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBN6j_UlW9uZiCe-3wb4qB68q8wZfnMo28K5O4Qs22vh25Knmm8paXSsTfbx1Y5jdogjJfyHxEE-v29FF9W_g2TZrOO04NkuP2Jrb-ULsfVnBtZBjhvVqOFRXy-LkCKwrJ_SFih-Ztrz8E_H2-qf7ZB7Udne6M5d7dljTUrlaU2tOBIqbVDYf7LbyJKGM4qykp_leF1KL8bm-OmCnSpfi9MKXztuaFR7NgdLEXST9YR1O8g2_0fhkSW')">
-<span class="absolute bottom-2 left-2 px-space-sm py-0.5 rounded-full bg-primary/80 backdrop-blur-sm text-on-primary font-label-caps text-label-caps uppercase">La Calera — 2.750 msnm</span>
-</div>
-<div class="p-space-md flex flex-col gap-space-xs">
-<h3 class="font-title-editorial text-title-editorial text-on-surface">Jardín silvestre de montaña</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Diseño ecológico con especies resistentes al viento andino y floración continua para polinizadores.</p>
-</div>
-</div>
-<!-- Proyecto 2 -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
-<div class="bg-cover bg-center w-full h-48 relative" data-alt="Estate in Chía Colombia with wooden pergola covered in flowering wisteria and jasmine vines, overlooking immaculate emerald green grass lawn" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAq0YO3VVQURZ9IkIOC905t0naJpQB7mZvb0RIEZOPV2lC0j5jXqgZhFB490ds0MFkItw3PNKXSR7DNv-1JH3M0CN2-9lvmz87fz9IcSr3GZJEvY_DihKr5uYPRseBpqlipQCh7sjnAPeXq0zqg8WiMNXEtszG0cMk3Q3htKtYSqKcN1BrsGWD5VJb1PSgIZ24wlpMHBdWI11z_uMK9CdMFlTlcZsFy4sUIjS_4WlQNAlH-sTyZfIK2')">
-<span class="absolute bottom-2 left-2 px-space-sm py-0.5 rounded-full bg-primary/80 backdrop-blur-sm text-on-primary font-label-caps text-label-caps uppercase">Finca en Chía</span>
-</div>
-<div class="p-space-md flex flex-col gap-space-xs">
-<h3 class="font-title-editorial text-title-editorial text-on-surface">Pérgola campestre &amp; césped inglés</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Estructura en madera con enredaderas aromáticas y nivelación milimétrica de prado kikuyo y trenza.</p>
-</div>
-</div>
-<!-- Proyecto 3 -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
-<div class="bg-cover bg-center w-full h-48 relative" data-alt="Luxury terrace in Rosales Bogota with vertical living wall, teakwood custom planters filled with philodendrons and mountain bamboo overlooking city" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMWis3caLHWpuzM96J5FZvCMlJplknmw9n6v6Cpy6CvWb-xGpJhVo60_n4ymYtdlgi99pzSd8rZjX3HmHffP1ZZQLYhGFzcTwlgTi3jNPOTcHq3pIHpbx6wbGmr4PRMm4hztZ2TTWevJ_J4SSO4sICGfYPLvXH3RX5v_MhivfAJq65WyLX0amjKAew2-DJZTgH-nWQNTdWZbmETrX3AT_qXfzaIZN4UFirQRsNZWLrcjSQf7OrSN0J')">
-<span class="absolute bottom-2 left-2 px-space-sm py-0.5 rounded-full bg-primary/80 backdrop-blur-sm text-on-primary font-label-caps text-label-caps uppercase">Rosales, Bogotá</span>
-</div>
-<div class="p-space-md flex flex-col gap-space-xs">
-<h3 class="font-title-editorial text-title-editorial text-on-surface">Muro verde &amp; jardineras en teca</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Transformación biofílica de terraza penthouse con drenaje perimetral y aislamiento acústico vegetal.</p>
-</div>
-</div>
-<!-- Proyecto 4 -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
-<div class="bg-cover bg-center w-full h-48 relative" data-alt="Hacienda in Sopó Colombia with cobblestone pedestrian walkway lined with giant blue hydrangeas and blooming lavenders under soft overcast sky" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD1AL0BFhbX4tS8D1nXQdF-wJ-EFbI2KCv6m3hgTDVKj2dv7PfRtX5TZGInfjCXaeyvjo9jQRbcC05-3cmYm4GXUoAjPPbIt81asnZanXLVW-fVuONP903v4H0OibjGd8rQEfX72zgWe10HM_k-TxY4ScPHRa3J82zgEdvtoJZXHPoyoqtQfbpBVIKOoQN9Hlz2PBko3t5iIOtBYu8Xj_z5DBQFWCDbOm2oM3-PjhHIMc2IGRc6yoee')">
-<span class="absolute bottom-2 left-2 px-space-sm py-0.5 rounded-full bg-primary/80 backdrop-blur-sm text-on-primary font-label-caps text-label-caps uppercase">Hacienda Sopó</span>
-</div>
-<div class="p-space-md flex flex-col gap-space-xs">
-<h3 class="font-title-editorial text-title-editorial text-on-surface">Sendero floral con hortensias</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Sendero botánico de 180 metros con macizos de hortensias azules y lavandas en suelo enriquecido.</p>
-</div>
-</div>
-<!-- Proyecto 5 -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
-<div class="bg-cover bg-center w-full h-48 relative" data-alt="Residential condominium in Cajica with geometric trimmed Eugenia hedges and emerald weed-free lawn" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBFadbS5AJsTlt5ktTGOke4f31BgXj37R91kdcc06v65woVI_89UPI_E-PnF_JO7QLa6oY41fYBHiSKyRA-IB5l8Y_va7JnFQqbk9z5tEyBRR20blLAwlT1LHz5NYpIBpx9-OKJjhL2Khtkc7oBn52EFU20hC0HGJxMhfuNA81Mxs_GI1AmdOV74MGuYM-rJY0rBXRYG4OASVUQz4TiKrlN73J3Giasuxit4rrF4LyQpOnacAYRXRft')">
-<span class="absolute bottom-2 left-2 px-space-sm py-0.5 rounded-full bg-primary/80 backdrop-blur-sm text-on-primary font-label-caps text-label-caps uppercase">Conjunto Cajicá</span>
-</div>
-<div class="p-space-md flex flex-col gap-space-xs">
-<h3 class="font-title-editorial text-title-editorial text-on-surface">Rehabilitación de prados y setos</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Recuperación integral de 3.200 m² de áreas verdes comunes y conformación de setos de eugenia viva.</p>
-</div>
-</div>
-<!-- Proyecto 6 -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
-<div class="bg-cover bg-center w-full h-48 relative" data-alt="Indoor chic apartment penthouse in El Chicó Bogota filled with healthy monstera plants, ficus lyrata, and natural stone gravel planters" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDG3jC_u-DYUKH21WrTF9HoOf6NtBKGVCVGE03J6XaHQS3pv25lyShWc7XmmsbtVjVft2chc3H5gqaQrRbAeugjC5uj7oxdoNrRD4AM4OvWZ1WI7Oo4zVVjy_oN8yjkYf7T9draOO3u6IcKgHpEoU390VVO4EwvaYB3KgDRzyarPKevYHZkMOeKug50ajOp5f7HcF2JH0G_GEin0ssQ8BWEV-mVoRYod6AdwoyYthjdOFte2uvoyx4b')">
-<span class="absolute bottom-2 left-2 px-space-sm py-0.5 rounded-full bg-primary/80 backdrop-blur-sm text-on-primary font-label-caps text-label-caps uppercase">Penthouse Chicó</span>
-</div>
-<div class="p-space-md flex flex-col gap-space-xs">
-<h3 class="font-title-editorial text-title-editorial text-on-surface">Diseño biofílico interior</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Vegetación aclimatada en macetería artesanal con riego por reserva capilar para espacios interiores.</p>
-</div>
-</div>
-</div>
-<a class="w-full py-space-sm px-space-md rounded-full bg-primary text-on-primary flex items-center justify-center gap-space-xs font-label-interactive text-label-interactive shadow-sm hover:bg-primary-container transition-colors mt-space-xs" data-path="galeria" href="#">
-<span class="material-symbols-outlined text-[18px]">collections</span>
-<span class="">Ver más trabajos en galería</span>
-</a>
-</section>
-<!-- 5. ¿POR QUÉ ELEGIRNOS? -->
-<section class="w-full px-margin-mobile pt-space-2xl flex flex-col gap-space-md">
-<div class="bg-surface-container-low rounded-2xl p-space-lg flex flex-col gap-space-lg">
-<div class="flex flex-col gap-space-xs">
-<div class="inline-flex items-center gap-space-xs self-start px-space-md py-space-xs rounded-full bg-surface-container-highest text-primary font-label-caps text-label-caps uppercase">
-<span class="material-symbols-outlined text-[14px]">psychology_alt</span>
-<span class="">Diferencial de Calidad</span>
-</div>
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">¿Por qué confiar en Jardineros Nacionales?</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">Bajo la dirección de Nicanor Torres, maestro paisajista y fundador, combinamos el rigor de la arquitectura del paisaje con la dedicación amorosa de la jardinería tradicional colombiana.</p>
-</div>
-<div class="flex flex-col gap-space-md">
-<!-- Beneficio 1 -->
-<div class="flex items-start gap-space-md bg-surface-container-lowest p-space-md rounded-xl">
-<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[20px]">thermostat</span>
-</div>
-<div class="flex flex-col gap-0.5">
-<h3 class="font-title-editorial text-[17px] text-primary font-semibold">Conocimiento microclimático</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Bajo la dirección de Nicanor Torres, maestro paisajista y fundador, combinamos el rigor de la arquitectura del paisaje con la dedicación amorosa de la jardinería tradicional colombiana.</p>
-</div>
-</div>
-<!-- Beneficio 2 -->
-<div class="flex items-start gap-space-md bg-surface-container-lowest p-space-md rounded-xl">
-<div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[20px]">local_florist</span>
-</div>
-<div class="flex flex-col gap-0.5">
-<h3 class="font-title-editorial text-[17px] text-primary font-semibold">Viveros propios y plantas aclimatadas</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Bajo la dirección de Nicanor Torres, maestro paisajista y fundador, combinamos el rigor de la arquitectura del paisaje con la dedicación amorosa de la jardinería tradicional colombiana.</p>
-</div>
-</div>
-<!-- Beneficio 3 -->
-<div class="flex items-start gap-space-md bg-surface-container-lowest p-space-md rounded-xl">
-<div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[20px]">badge</span>
-</div>
-<div class="flex flex-col gap-0.5">
-<h3 class="font-title-editorial text-[17px] text-primary font-semibold">Pulcritud &amp; Equipo formal certificado</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Bajo la dirección de Nicanor Torres, maestro paisajista y fundador, combinamos el rigor de la arquitectura del paisaje con la dedicación amorosa de la jardinería tradicional colombiana.</p>
-</div>
-</div>
-<!-- Beneficio 4 -->
-<div class="flex items-start gap-space-md bg-surface-container-lowest p-space-md rounded-xl">
-<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[20px]">event_repeat</span>
-</div>
-<div class="flex flex-col gap-0.5">
-<h3 class="font-title-editorial text-[17px] text-primary font-semibold">Acompañamiento post-siembra</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Bajo la dirección de Nicanor Torres, maestro paisajista y fundador, combinamos el rigor de la arquitectura del paisaje con la dedicación amorosa de la jardinería tradicional colombiana.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- 6. ZONAS DE COBERTURA -->
-<section class="w-full px-margin-mobile pt-space-2xl flex flex-col gap-space-md">
-<div class="flex flex-col gap-space-xs">
-<div class="inline-flex items-center gap-space-xs self-start px-space-md py-space-xs rounded-full bg-surface-container-highest text-primary font-label-caps text-label-caps uppercase">
-<span class="material-symbols-outlined text-[14px]">map</span>
-<span class="">Área de Cobertura</span>
-</div>
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Presentes en toda la Sabana</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">Desplazamos equipos técnicos y maquinaria especializada directamente hasta tu finca, casa campestre o edificio.</p>
-</div>
-<!-- Interactive Badges Container -->
-<div class="flex flex-wrap gap-2">
-<button class="coverage-pill px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-caps text-label-caps transition-all" data-zone="Bogotá D.C.">
-        Bogotá D.C. (Norte, Chicó, Rosales, Usaquén, Suba)
-      </button>
-<button class="coverage-pill px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-label-caps text-label-caps hover:bg-secondary-container transition-all" data-zone="Chía">
-        Chía
-      </button>
-<button class="coverage-pill px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-label-caps text-label-caps hover:bg-secondary-container transition-all" data-zone="Cajicá">
-        Cajicá
-      </button>
-<button class="coverage-pill px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-label-caps text-label-caps hover:bg-secondary-container transition-all" data-zone="Sopó">
-        Sopó
-      </button>
-<button class="coverage-pill px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-label-caps text-label-caps hover:bg-secondary-container transition-all" data-zone="La Calera">
-        La Calera
-      </button>
-<button class="coverage-pill px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-label-caps text-label-caps hover:bg-secondary-container transition-all" data-zone="Zipaquirá">
-        Zipaquirá
-      </button>
-<button class="coverage-pill px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-label-caps text-label-caps hover:bg-secondary-container transition-all" data-zone="Tabio">
-        Tabio
-      </button>
-<button class="coverage-pill px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-label-caps text-label-caps hover:bg-secondary-container transition-all" data-zone="Tenjo">
-        Tenjo
-      </button>
-<button class="coverage-pill px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-label-caps text-label-caps hover:bg-secondary-container transition-all" data-zone="Cota">
-        Cota
-      </button>
-</div>
-<div class="bg-surface-container p-space-md rounded-xl flex items-center gap-space-md text-primary"><div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[20px]">pin_drop</span></div><div class="flex flex-col gap-0.5"><p class="font-body-sm text-body-sm font-medium text-on-surface"><span class="font-semibold text-primary">Valoración presencial:</span> Vamos a tu predio para diagnosticar suelo, iluminación y requerimientos botánicos antes de cotizar.</p><a class="font-label-caps text-label-caps text-primary underline flex items-center gap-1 mt-1 hover:text-secondary" href="https://share.google/441rL7nGpHCRGlVmw" rel="noopener noreferrer" target="_blank">Ver ubicación en Google Maps <span class="material-symbols-outlined text-[14px]">open_in_new</span></a></div></div>
-</section>
-<!-- 7. ÚLTIMAS ENTRADAS DEL BLOG -->
-<section class="w-full px-margin-mobile pt-space-2xl flex flex-col gap-space-md">
-<div class="flex flex-col gap-space-xs">
-<div class="inline-flex items-center gap-space-xs self-start px-space-md py-space-xs rounded-full bg-surface-container-highest text-primary font-label-caps text-label-caps uppercase">
-<span class="material-symbols-outlined text-[14px]">menu_book</span>
-<span class="">Bitácora Sabanera</span>
-</div>
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Consejos &amp; Guías Botánicas</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">Conocimiento técnico para cultivar y proteger tu espacio natural durante cada época del año.</p>
-</div>
-<div class="flex flex-col gap-space-sm">
-<!-- Artículo 1 -->
-<a class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs group transition-colors" data-path="blog" href="#">
-<div class="flex items-center justify-between text-tertiary">
-<span class="font-label-caps text-label-caps uppercase">Clima &amp; Heladas</span>
-<span class="font-body-sm text-body-sm text-outline">5 min de lectura</span>
-</div>
-<h3 class="font-title-editorial text-title-editorial text-on-surface group-hover:text-primary transition-colors">
-          Cómo preparar tu jardín de la Sabana para la temporada de heladas
-        </h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-          Estrategias de acolchado orgánico (mulch), riegos estratégicos antes del amanecer y lonas térmicas protectoras.
-        </p>
-<span class="font-label-interactive text-label-interactive text-primary inline-flex items-center gap-1 pt-1">
-          Leer artículo <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
-</span>
-</a>
-<!-- Artículo 2 -->
-<a class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs group transition-colors" data-path="blog" href="#">
-<div class="flex items-center justify-between text-tertiary">
-<span class="font-label-caps text-label-caps uppercase">Jardinería Urbana</span>
-<span class="font-body-sm text-body-sm text-outline">4 min de lectura</span>
-</div>
-<h3 class="font-title-editorial text-title-editorial text-on-surface group-hover:text-primary transition-colors">
-          Los mejores muros verdes para terrazas en apartamentos bogotanos
-        </h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-          Las 7 especies que toleran el viento en pisos altos y cómo planificar drenajes sin afectar la estructura del edificio.
-        </p>
-<span class="font-label-interactive text-label-interactive text-primary inline-flex items-center gap-1 pt-1">
-          Leer artículo <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
-</span>
-</a>
-<!-- Artículo 3 -->
-<a class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs group transition-colors" data-path="blog" href="#">
-<div class="flex items-center justify-between text-tertiary">
-<span class="font-label-caps text-label-caps uppercase">Eficiencia Hídrica</span>
-<span class="font-body-sm text-body-sm text-outline">6 min de lectura</span>
-</div>
-<h3 class="font-title-editorial text-title-editorial text-on-surface group-hover:text-primary transition-colors">
-          Guía de riego inteligente: ahorra agua y mantén tu césped esmeralda
-        </h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-          Aprende a programar aspersores según pluviometría sabanera para evitar hongos radiculares y optimizar el consumo.
-        </p>
-<span class="font-label-interactive text-label-interactive text-primary inline-flex items-center gap-1 pt-1">
-          Leer artículo <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
-</span>
-</a>
-</div>
-</section>
-<!-- 8. LLAMADO A LA ACCIÓN FINAL -->
-<section class="w-full px-margin-mobile pt-space-2xl">
-<div class="bg-primary text-on-primary rounded-2xl p-space-lg flex flex-col gap-space-md relative overflow-hidden shadow-xl">
-<div class="absolute -right-12 -bottom-12 w-48 h-48 rounded-full bg-secondary-container/10 pointer-events-none"></div>
-<div class="flex items-center gap-space-xs text-secondary-container">
-<span class="material-symbols-outlined text-[24px]">energy_savings_leaf</span>
-<span class="font-label-caps text-label-caps uppercase tracking-wider">Inicia tu proyecto</span>
-</div>
-<div class="flex flex-col gap-space-xs relative z-10">
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary">Cuéntanos sobre tu jardín</h2>
-<p class="font-body-md text-body-md text-surface-container-high leading-relaxed">
-          ¿Quieres darle nueva vida a tu espacio verde? Escríbenos y agendemos una visita técnica en tu predio para asesorarte de manera personalizada.
-        </p>
-</div>
-<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm pt-space-xs relative z-10">
-<a class="min-h-[50px] px-space-lg py-space-sm rounded-full bg-[#25D366] text-white flex items-center justify-center gap-space-xs font-label-interactive text-label-interactive font-medium shadow-lg active:scale-95 transition-transform" href="https://wa.me/573214165095?text=Hola%20Jardineros%20Nacionales,%20quiero%20agendar%20una%20visita%20t%C3%A9cnica%20para%20mi%20predio" rel="noopener noreferrer" target="_blank">
-<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.58 1.968.928 3.149.929 3.182 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.146-.525-1.745-.722-2.884-2.484-2.971-2.6-.088-.117-.704-.937-.704-1.787 0-.85.443-1.268.601-1.442.158-.173.344-.216.459-.216.115 0 .23 0 .331.006.107.006.251-.041.392.298.144.346.49 1.196.533 1.282.043.086.072.187.014.302-.057.115-.086.187-.172.287-.086.101-.182.226-.26.303-.086.086-.176.18-.076.352.101.172.447.737.96 1.194.66.588 1.216.771 1.388.857.172.086.273.072.374-.044.101-.115.43-.502.545-.674.115-.172.23-.144.387-.086.158.058.991.467 1.163.553.172.086.287.129.33.201.043.072.043.417-.101.822zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.436 5.176L2 22l4.957-1.397C8.421 21.493 10.15 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"></path></svg>
-<span class="">Escribir por WhatsApp ahora</span>
-</a>
-<a class="min-h-[50px] px-space-md py-space-sm rounded-full bg-surface-container-lowest/15 backdrop-blur-sm text-on-primary hover:bg-surface-container-lowest/25 flex items-center justify-center gap-space-xs font-label-interactive text-label-interactive transition-colors" data-path="contacto" href="#">
-<span class="material-symbols-outlined text-[18px]">calendar_month</span>
-<span class="">Formulario de visita</span>
-</a>
-</div>
-</div>
-</section>
-</div>
-<script>
-  (function() {
-    const pills = document.querySelectorAll('.coverage-pill');
-    pills.forEach(pill => {
-      pill.addEventListener('click', () => {
-        pills.forEach(p => {
-          p.classList.remove('bg-primary', 'text-on-primary');
-          p.classList.add('bg-surface-container-lowest', 'text-on-surface');
-        });
-        pill.classList.remove('bg-surface-container-lowest', 'text-on-surface');
-        pill.classList.add('bg-primary', 'text-on-primary');
-      });
-    });
-  })();
-</script><footer class="mt-space-2xl px-margin-mobile pt-space-xl pb-space-2xl bg-surface-container-low rounded-t-xl"><div class="flex flex-col gap-space-lg"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><img alt="Logo Jardineros Nacionales con Grillo" class="h-8 w-auto object-contain" src="assets/logo.png"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight">Jardineros Nacionales</span><span class="font-label-caps text-label-caps text-tertiary">Fundado y dirigido por Nicanor Torres</span></div></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Diseño, transformación y mantenimiento de jardines en Bogotá, La Calera, Chía y Cundinamarca.</p></div><a class="inline-flex items-center gap-space-xs self-start px-space-md py-space-xs rounded-full bg-surface-container-highest text-primary font-label-caps text-label-caps uppercase hover:bg-secondary-container transition-colors" href="https://share.google/441rL7nGpHCRGlVmw" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[14px]">location_on</span><span class="">Bogotá &amp; Sabana de Cundinamarca — Ver en Maps</span></a><div class="grid grid-cols-2 gap-space-md font-body-sm text-body-sm"><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-tertiary uppercase">Navegación</span><a class="hover:text-primary transition-colors" data-path="inicio" href="#">Inicio</a><a class="hover:text-primary transition-colors" data-path="servicios" href="#">Servicios</a><a class="hover:text-primary transition-colors" data-path="galeria" href="#">Galería</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-tertiary uppercase">Editorial</span><a class="hover:text-primary transition-colors" data-path="blog" href="#">Blog</a><a class="hover:text-primary transition-colors" data-path="nosotros" href="#">Nosotros</a><a class="hover:text-primary transition-colors" data-path="contacto" href="#">Contacto</a></div></div><div class="flex flex-col gap-space-xs pt-space-sm font-body-sm text-body-sm text-on-surface-variant"><a class="flex items-center gap-space-xs hover:text-primary" href="tel:+573214165095"><span class="material-symbols-outlined text-[16px]">call</span>+57 321 416 5095</a><a class="flex items-center gap-space-xs hover:text-primary" href="mailto:contacto@nicanortorres.com"><img alt="Logo Jardineros Nacionales con Grillo" class="h-8 w-auto object-contain" src="assets/logo.png"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight">Jardineros Nacionales</span><span class="font-label-caps text-label-caps text-tertiary">Fundado y dirigido por Nicanor Torres</span></div></a></div><div class="flex items-center gap-space-md pt-space-xs text-on-surface-variant"><a aria-label="Instagram" class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-container hover:text-primary transition-colors" href="https://instagram.com" target="_blank"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a aria-label="Facebook" class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-container hover:text-primary transition-colors" href="https://facebook.com" target="_blank"><span class="material-symbols-outlined text-[20px]">public</span></a><a aria-label="Pinterest" class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-container hover:text-primary transition-colors" href="https://pinterest.com" target="_blank"><span class="material-symbols-outlined text-[20px]">push_pin</span></a></div><div class="text-center font-label-caps text-label-caps text-outline pt-space-sm">© Jardineros Nacionales · Nicanor Torres (Fundador &amp; Maestro Paisajista). Arquitectura &amp; Paisajismo Andino.</div></div></footer></main><div class="fixed bottom-24 right-margin-mobile z-50 flex items-center gap-space-xs"><div class="hidden sm:flex items-center px-space-md py-space-xs rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_4px_20px_-2px_rgba(45,90,61,0.06)] font-label-caps text-label-caps text-primary uppercase">¿Hablamos de tu jardín?</div><a aria-label="WhatsApp Asesoría" class="w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-[0_12px_32px_-4px_rgba(45,90,61,0.18)] hover:scale-105 active:scale-95 transition-transform animate-[pulse-subtle_3s_ease-in-out_infinite]" href="https://wa.me/573214165095?text=Hola%20Jardineros%20Nacionales,%20deseo%20asesor%C3%ADa%20para%20mi%20jard%C3%ADn" rel="noopener noreferrer" target="_blank"><svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.58 1.968.928 3.149.929 3.182 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.146-.525-1.745-.722-2.884-2.484-2.971-2.6-.088-.117-.704-.937-.704-1.787 0-.85.443-1.268.601-1.442.158-.173.344-.216.459-.216.115 0 .23 0 .331.006.107.006.251-.041.392.298.144.346.49 1.196.533 1.282.043.086.072.187.014.302-.057.115-.086.187-.172.287-.086.101-.182.226-.26.303-.086.086-.176.18-.076.352.101.172.447.737.96 1.194.66.588 1.216.771 1.388.857.172.086.273.072.374-.044.101-.115.43-.502.545-.674.115-.172.23-.144.387-.086.158.058.991.467 1.163.553.172.086.287.129.33.201.043.072.043.417-.101.822zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.436 5.176L2 22l4.957-1.397C8.421 21.493 10.15 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"></path></svg></a></div><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex items-center justify-around h-16 px-gutter-mobile"><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs min-w-[54px] min-h-[44px] transition-colors text-primary font-semibold" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">yard</span><span class="font-label-caps text-label-caps">Inicio</span></a><a class="flex flex-col items-center justify-center gap-space-xs text-on-surface-variant hover:text-on-surface min-w-[54px] min-h-[44px] transition-colors" data-path="servicios" href="#"><span class="material-symbols-outlined text-[22px]">potted_plant</span><span class="font-label-caps text-label-caps">Servicios</span></a><a class="flex flex-col items-center justify-center gap-space-xs text-on-surface-variant hover:text-on-surface min-w-[54px] min-h-[44px] transition-colors" data-path="galeria" href="#"><span class="material-symbols-outlined text-[22px]">photo_library</span><span class="font-label-caps text-label-caps">Galería</span></a><a class="flex flex-col items-center justify-center gap-space-xs text-on-surface-variant hover:text-on-surface min-w-[54px] min-h-[44px] transition-colors" data-path="blog" href="#"><span class="material-symbols-outlined text-[22px]">menu_book</span><span class="font-label-caps text-label-caps">Blog</span></a><a class="flex flex-col items-center justify-center gap-space-xs text-on-surface-variant hover:text-on-surface min-w-[54px] min-h-[44px] transition-colors" data-path="nosotros" href="#"><span class="material-symbols-outlined text-[22px]">nature_people</span><span class="font-label-caps text-label-caps">Nosotros</span></a><a class="flex flex-col items-center justify-center gap-space-xs text-on-surface-variant hover:text-on-surface min-w-[54px] min-h-[44px] transition-colors" data-path="contacto" href="#"><span class="material-symbols-outlined text-[22px]">mail</span><span class="font-label-caps text-label-caps">Contacto</span></a></div></nav>
+  </script>
 
-</body></html>
+  <style>
+    @layer base {
+      html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        background-color: #f2fcf2;
+        color: #151e18;
+      }
+      body {
+        overscroll-behavior-y: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .pb-safe {
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+      .pt-safe {
+        padding-top: env(safe-area-inset-top, 0px);
+      }
+    }
+
+    /* Custom scrollbar for modern browsers */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #e6f1e7;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #a1d2ad;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #3b684a;
+    }
+
+    @keyframes pulse-subtle {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.06); }
+    }
+    .animate-pulse-subtle {
+      animation: pulse-subtle 3s ease-in-out infinite;
+    }
+
+    .modal-backdrop {
+      background-color: rgba(10, 25, 15, 0.75);
+      backdrop-filter: blur(8px);
+    }
+
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body class="bg-surface font-sans text-on-surface flex flex-col min-h-screen relative antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+
+  <!-- ================= TOP HEADER ================= -->
+  <header class="fixed top-0 w-full z-40 pt-safe bg-surface/90 backdrop-blur-xl border-b border-primary/5 shadow-[0_2px_12px_rgba(20,66,39,0.05)] transition-all">
+    <div class="max-w-6xl mx-auto h-16 px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#inicio" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all shadow-sm">
+          <span class="material-symbols-outlined text-2xl">yard</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif font-bold text-lg sm:text-xl text-primary leading-none tracking-tight">Jardineros Nacionales</span>
+          <span class="text-[11px] font-semibold text-tertiary tracking-wide uppercase mt-0.5">Dirigido por Nicanor Torres</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+        <a href="#inicio" class="px-3 py-1.5 rounded-full text-sm font-medium text-primary hover:bg-surface-container transition-colors">Inicio</a>
+        <a href="#servicios" class="px-3 py-1.5 rounded-full text-sm font-medium text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">Servicios</a>
+        <a href="#galeria" class="px-3 py-1.5 rounded-full text-sm font-medium text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">Galería</a>
+        <a href="#diferencial" class="px-3 py-1.5 rounded-full text-sm font-medium text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">Nosotros</a>
+        <a href="#cobertura" class="px-3 py-1.5 rounded-full text-sm font-medium text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">Cobertura</a>
+        <a href="#blog" class="px-3 py-1.5 rounded-full text-sm font-medium text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">Bitácora</a>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Cotizador Trigger Button -->
+        <button onclick="openModal('calculator-modal')" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-primary font-semibold text-xs tracking-wider uppercase transition-all shadow-sm">
+          <span class="material-symbols-outlined text-base">calculate</span>
+          <span>Calcular</span>
+        </button>
+
+        <!-- WhatsApp Quick Chat -->
+        <a href="https://wa.me/573214165095?text=Hola%20Jardineros%20Nacionales,%20quisiera%20solicitar%20una%20asesor%C3%ADa%20para%20mi%20jard%C3%ADn" 
+           target="_blank" rel="noopener noreferrer" 
+           class="min-h-[40px] px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed hover:shadow-md flex items-center gap-1.5 font-semibold text-xs tracking-wide transition-all">
+          <span class="material-symbols-outlined text-base">chat</span>
+          <span class="font-medium">Cotizar</span>
+        </a>
+
+        <!-- Call/Contact Modal Button -->
+        <button onclick="openModal('contact-modal')" aria-label="Contacto directo" class="w-10 h-10 rounded-full bg-primary hover:bg-primary-container text-white flex items-center justify-center transition-colors shadow-sm">
+          <span class="material-symbols-outlined text-lg">calendar_month</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT WRAPPER ================= -->
+  <main class="flex-1 flex flex-col relative w-full pt-16 pb-28 md:pb-16 bg-surface">
+
+    <!-- 1. HERO SECTION -->
+    <section id="inicio" class="relative w-full overflow-hidden bg-primary-container text-on-primary">
+      <div class="bg-cover bg-center w-full min-h-[540px] sm:min-h-[580px] lg:min-h-[640px] flex flex-col justify-end p-5 sm:p-8 lg:p-14 relative" 
+           style="background-image: url('images/mosquera-los-pinos-4.jpg');">
+        
+        <!-- Depth gradient overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/65 to-primary/25"></div>
+
+        <div class="relative z-10 max-w-3xl flex flex-col gap-4 pb-4">
+          
+          <!-- Category Pill -->
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-md self-start text-white border border-white/20 shadow-sm">
+            <span class="text-base">🌿</span>
+            <span class="text-[11px] font-bold tracking-widest uppercase">Paisajismo Premium en Bogotá y Sabana</span>
+          </div>
+
+          <!-- Main Title -->
+          <h1 class="font-serif font-bold text-3xl sm:text-5xl lg:text-6xl text-white leading-[1.15] tracking-tight">
+            Creamos y cuidamos jardines que dan vida a tus espacios
+          </h1>
+
+          <!-- Lead Paragraph -->
+          <p class="text-sm sm:text-lg text-surface-container-high leading-relaxed max-w-2xl font-normal">
+            Paisajismo de autor y jardinería integral en <strong>Bogotá, Chía, Cajicá, Sopó, La Calera, Mosquera y Cundinamarca</strong>. Transformamos fincas, casas quintas, terrazas y conjuntos residenciales con maestría botánica andina adaptada a cada microclima.
+          </p>
+
+          <!-- Hero CTAs -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-3">
+            <a href="https://wa.me/573214165095?text=Hola%20Jardineros%20Nacionales,%20quisiera%20solicitar%20una%20cotizaci%C3%B3n%20para%20mi%20jard%C3%ADn" 
+               target="_blank" rel="noopener noreferrer" 
+               class="min-h-[50px] px-6 py-3 rounded-full bg-[#25D366] text-white flex items-center justify-center gap-2 font-semibold text-sm sm:text-base shadow-lg hover:bg-[#20ba59] active:scale-95 transition-all">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.58 1.968.928 3.149.929 3.182 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.146-.525-1.745-.722-2.884-2.484-2.971-2.6-.088-.117-.704-.937-.704-1.787 0-.85.443-1.268.601-1.442.158-.173.344-.216.459-.216.115 0 .23 0 .331.006.107.006.251-.041.392.298.144.346.49 1.196.533 1.282.043.086.072.187.014.302-.057.115-.086.187-.172.287-.086.101-.182.226-.26.303-.086.086-.176.18-.076.352.101.172.447.737.96 1.194.66.588 1.216.771 1.388.857.172.086.273.072.374-.044.101-.115.43-.502.545-.674.115-.172.23-.144.387-.086.158.058.991.467 1.163.553.172.086.287.129.33.201.043.072.043.417-.101.822zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.436 5.176L2 22l4.957-1.397C8.421 21.493 10.15 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"></path></svg>
+              <span>Solicitar cotización</span>
+            </a>
+
+            <a href="#galeria" 
+               class="min-h-[50px] px-6 py-3 rounded-full bg-white/15 backdrop-blur-md text-white hover:bg-white/25 border border-white/20 flex items-center justify-center gap-2 font-medium text-sm sm:text-base transition-all">
+              <span>Ver proyectos vivos</span>
+              <span class="material-symbols-outlined text-lg">arrow_downward</span>
+            </a>
+
+            <button onclick="openModal('calculator-modal')" 
+               class="min-h-[50px] px-6 py-3 rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed flex items-center justify-center gap-2 font-semibold text-sm sm:text-base transition-all">
+              <span class="material-symbols-outlined text-lg">calculate</span>
+              <span>Calculador de proyecto</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. FRANJA DE CONFIANZA / STATS -->
+    <section class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 -mt-6 sm:-mt-8 relative z-20">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 bg-surface-container-lowest rounded-2xl p-4 sm:p-6 shadow-xl border border-primary/5 text-on-surface">
+        
+        <!-- Stat 1 -->
+        <div class="flex flex-col p-2 sm:p-3 hover:bg-surface-container-low rounded-xl transition-colors">
+          <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-2">
+            <span class="material-symbols-outlined text-xl">nature</span>
+          </div>
+          <span class="text-[11px] font-bold text-tertiary uppercase tracking-wider">Cobertura</span>
+          <span class="font-serif font-bold text-base sm:text-lg text-primary leading-tight mt-0.5">Bogotá y Sabana</span>
+          <span class="text-xs text-on-surface-variant mt-0.5">Norte y Occidente (Mosquera)</span>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="flex flex-col p-2 sm:p-3 hover:bg-surface-container-low rounded-xl transition-colors">
+          <div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary mb-2">
+            <span class="material-symbols-outlined text-xl">palette</span>
+          </div>
+          <span class="text-[11px] font-bold text-tertiary uppercase tracking-wider">Exclusividad</span>
+          <span class="font-serif font-bold text-base sm:text-lg text-primary leading-tight mt-0.5">100% Personalizado</span>
+          <span class="text-xs text-on-surface-variant mt-0.5">Nativas y adaptables</span>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="flex flex-col p-2 sm:p-3 hover:bg-surface-container-low rounded-xl transition-colors">
+          <div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary mb-2">
+            <span class="material-symbols-outlined text-xl">speed</span>
+          </div>
+          <span class="text-[11px] font-bold text-tertiary uppercase tracking-wider">Agilidad</span>
+          <span class="font-serif font-bold text-base sm:text-lg text-primary leading-tight mt-0.5">Respuesta en 24h</span>
+          <span class="text-xs text-on-surface-variant mt-0.5">Visitas y diagnóstico</span>
+        </div>
+
+        <!-- Stat 4 -->
+        <div class="flex flex-col p-2 sm:p-3 hover:bg-surface-container-low rounded-xl transition-colors">
+          <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-2">
+            <span class="material-symbols-outlined text-xl">verified</span>
+          </div>
+          <span class="text-[11px] font-bold text-tertiary uppercase tracking-wider">Trayectoria</span>
+          <span class="font-serif font-bold text-base sm:text-lg text-primary leading-tight mt-0.5">+15 Años</span>
+          <span class="text-xs text-on-surface-variant mt-0.5">450+ jardines vivos</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. NUESTROS PROYECTOS VIVOS (PORTFOLIO SELECCIONADO) -->
+    <section id="galeria" class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 flex flex-col gap-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div class="flex flex-col gap-2 max-w-2xl">
+          <div class="inline-flex items-center gap-1.5 self-start px-3.5 py-1 rounded-full bg-surface-container-highest text-primary font-bold text-[11px] tracking-wider uppercase">
+            <span class="material-symbols-outlined text-sm">photo_library</span>
+            <span>Portfolio Seleccionado</span>
+          </div>
+          <h2 class="font-serif font-bold text-2xl sm:text-4xl text-primary">Nuestros Proyectos Vivos</h2>
+          <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">
+            Una mirada a los espacios campestres y urbanos que florecen bajo nuestra dirección botánica y cuidado continuo en Cundinamarca.
+          </p>
+        </div>
+
+        <!-- Filter tabs for gallery -->
+        <div class="flex flex-wrap gap-1.5 bg-surface-container p-1 rounded-full self-start md:self-auto">
+          <button onclick="filterGallery('todos', this)" class="gallery-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-primary text-white transition-all">Todos</button>
+          <button onclick="filterGallery('campestres', this)" class="gallery-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold text-on-surface-variant hover:text-primary transition-all">Casas Campestres &amp; Quintas</button>
+          <button onclick="filterGallery('terrazas', this)" class="gallery-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold text-on-surface-variant hover:text-primary transition-all">Terrazas &amp; Áticos</button>
+          <button onclick="filterGallery('muros', this)" class="gallery-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold text-on-surface-variant hover:text-primary transition-all">Muros &amp; Senderos</button>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- PROYECTO DESTACADO 1: CONDOMINIO LOS PINOS MOSQUERA (FOTOS REALES 1, 2, 3, 4) -->
+        <div data-category="campestres" onclick="openLightbox(101)" class="gallery-card group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-md hover:shadow-2xl border-2 border-secondary/20 flex flex-col cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="bg-cover bg-center w-full h-56 relative overflow-hidden" 
+               style="background-image: url('images/mosquera-los-pinos-1.jpg')">
+            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-secondary text-white text-[11px] font-bold uppercase tracking-wider shadow-sm">⭐ Proyecto Destacado</span>
+            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-primary/90 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider">Mosquera, Cundinamarca</span>
+            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-4 py-1.5 bg-white text-primary text-xs font-bold rounded-full shadow-lg flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">collections</span> Ver galería (5 fotos)</span>
+            </div>
+          </div>
+          <div class="p-5 flex flex-col gap-2">
+            <div class="flex items-center gap-2 text-secondary">
+              <span class="material-symbols-outlined text-lg">villa</span>
+              <span class="text-xs font-bold uppercase tracking-wide">Condominio Los Pinos</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors leading-snug">
+              Diseño casa quinta &amp; jardín urbano contemporáneo
+            </h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
+              Integración de arquitectura cúbica moderna con macizos perimetrales de begonias rojas, hortensias policromáticas y cortaderias en prado esmeralda.
+            </p>
+            <div class="flex items-center justify-between pt-2 border-t border-primary/5 text-xs font-semibold text-primary">
+              <span class="inline-flex items-center gap-1">Ver álbum fotográfico <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+              <span class="px-2 py-0.5 bg-surface-container rounded-full text-tertiary">5 Fotos HD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROYECTO DESTACADO 2: MACIZO FLORAL DE ACHIRAS Y HORTENSIAS (FOTO REAL 5) -->
+        <div data-category="campestres" onclick="openLightbox(102)" class="gallery-card group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-primary/5 flex flex-col cursor-pointer transition-all duration-300">
+          <div class="bg-cover bg-center w-full h-56 relative overflow-hidden" 
+               style="background-image: url('images/mosquera-los-pinos-5.jpg')">
+            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-primary/90 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider">Condominio Los Pinos</span>
+            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center shadow-lg"><span class="material-symbols-outlined">zoom_in</span></span>
+            </div>
+          </div>
+          <div class="p-5 flex flex-col gap-2">
+            <div class="flex items-center gap-2 text-secondary">
+              <span class="material-symbols-outlined text-lg">local_florist</span>
+              <span class="text-xs font-bold uppercase tracking-wide">Isla Botánica Central</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors leading-snug">
+              Isla floral de Achiras &amp; Hortensias azules
+            </h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
+              Macizo focal en pradera con Achiras rojas (Canna indica) de gran porte rodeadas por un borde vivo de hortensias pastel y follaje andino.
+            </p>
+            <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline pt-1">
+              Ver detalles botánicos <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- PROYECTO 3: LA CALERA -->
+        <div data-category="campestres" onclick="openLightbox(1)" class="gallery-card group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-primary/5 flex flex-col cursor-pointer transition-all duration-300">
+          <div class="bg-cover bg-center w-full h-56 relative overflow-hidden" 
+               style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBN6j_UlW9uZiCe-3wb4qB68q8wZfnMo28K5O4Qs22vh25Knmm8paXSsTfbx1Y5jdogjJfyHxEE-v29FF9W_g2TZrOO04NkuP2Jrb-ULsfVnBtZBjhvVqOFRXy-LkCKwrJ_SFih-Ztrz8E_H2-qf7ZB7Udne6M5d7dljTUrlaU2tOBIqbVDYf7LbyJKGM4qykp_leF1KL8bm-OmCnSpfi9MKXztuaFR7NgdLEXST9YR1O8g2_0fhkSW')">
+            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-primary/85 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider">La Calera — 2.750 msnm</span>
+            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center shadow-lg"><span class="material-symbols-outlined">zoom_in</span></span>
+            </div>
+          </div>
+          <div class="p-5 flex flex-col gap-1.5">
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">Jardín silvestre de montaña</h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Diseño ecológico con especies resistentes al viento andino, salvias moradas, lavandas y floración continua para polinizadores.
+            </p>
+          </div>
+        </div>
+
+        <!-- PROYECTO 4: CHÍA -->
+        <div data-category="campestres" onclick="openLightbox(2)" class="gallery-card group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-primary/5 flex flex-col cursor-pointer transition-all duration-300">
+          <div class="bg-cover bg-center w-full h-56 relative overflow-hidden" 
+               style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAq0YO3VVQURZ9IkIOC905t0naJpQB7mZvb0RIEZOPV2lC0j5jXqgZhFB490ds0MFkItw3PNKXSR7DNv-1JH3M0CN2-9lvmz87fz9IcSr3GZJEvY_DihKr5uYPRseBpqlipQCh7sjnAPeXq0zqg8WiMNXEtszG0cMk3Q3htKtYSqKcN1BrsGWD5VJb1PSgIZ24wlpMHBdWI11z_uMK9CdMFlTlcZsFy4sUIjS_4WlQNAlH-sTyZfIK2')">
+            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-primary/85 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider">Finca en Chía</span>
+            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center shadow-lg"><span class="material-symbols-outlined">zoom_in</span></span>
+            </div>
+          </div>
+          <div class="p-5 flex flex-col gap-1.5">
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">Pérgola campestre &amp; césped inglés</h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Estructura en madera con enredaderas aromáticas y nivelación milimétrica de prado kikuyo y trenza de alta densidad.
+            </p>
+          </div>
+        </div>
+
+        <!-- PROYECTO 5: ROSALES BOGOTÁ -->
+        <div data-category="terrazas" onclick="openLightbox(3)" class="gallery-card group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-primary/5 flex flex-col cursor-pointer transition-all duration-300">
+          <div class="bg-cover bg-center w-full h-56 relative overflow-hidden" 
+               style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMWis3caLHWpuzM96J5FZvCMlJplknmw9n6v6Cpy6CvWb-xGpJhVo60_n4ymYtdlgi99pzSd8rZjX3HmHffP1ZZQLYhGFzcTwlgTi3jNPOTcHq3pIHpbx6wbGmr4PRMm4hztZ2TTWevJ_J4SSO4sICGfYPLvXH3RX5v_MhivfAJq65WyLX0amjKAew2-DJZTgH-nWQNTdWZbmETrX3AT_qXfzaIZN4UFirQRsNZWLrcjSQf7OrSN0J')">
+            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-primary/85 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider">Rosales, Bogotá</span>
+            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center shadow-lg"><span class="material-symbols-outlined">zoom_in</span></span>
+            </div>
+          </div>
+          <div class="p-5 flex flex-col gap-1.5">
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">Muro verde &amp; jardineras en teca</h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Transformación biofílica de terraza penthouse con drenaje perimetral y aislamiento acústico vegetal con vista a la ciudad.
+            </p>
+          </div>
+        </div>
+
+        <!-- PROYECTO 6: SOPÓ -->
+        <div data-category="muros" onclick="openLightbox(4)" class="gallery-card group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-primary/5 flex flex-col cursor-pointer transition-all duration-300">
+          <div class="bg-cover bg-center w-full h-56 relative overflow-hidden" 
+               style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD1AL0BFhbX4tS8D1nXQdF-wJ-EFbI2KCv6m3hgTDVKj2dv7PfRtX5TZGInfjCXaeyvjo9jQRbcC05-3cmYm4GXUoAjPPbIt81asnZanXLVW-fVuONP903v4H0OibjGd8rQEfX72zgWe10HM_k-TxY4ScPHRa3J82zgEdvtoJZXHPoyoqtQfbpBVIKOoQN9Hlz2PBko3t5iIOtBYu8Xj_z5DBQFWCDbOm2oM3-PjhHIMc2IGRc6yoee')">
+            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-primary/85 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider">Hacienda Sopó</span>
+            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center shadow-lg"><span class="material-symbols-outlined">zoom_in</span></span>
+            </div>
+          </div>
+          <div class="p-5 flex flex-col gap-1.5">
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">Sendero floral con hortensias</h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Sendero botánico de 180 metros con macizos de hortensias azules y lavandas en suelo orgánicamente enriquecido.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Action Button for Gallery -->
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-3 pt-2">
+        <a href="https://wa.me/573214165095?text=Hola%20Nicanor,%20me%20encant%C3%B3%20el%20proyecto%20de%20Mosquera%20(Condominio%20Los%20Pinos).%20Quisiera%20cotizar%20un%20dise%C3%B1o%20similar%20para%20mi%20predio" 
+           target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 py-3.5 px-8 rounded-full bg-[#25D366] text-white font-bold text-sm hover:bg-[#20ba59] shadow-md transition-all">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.58 1.968.928 3.149.929 3.182 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.146-.525-1.745-.722-2.884-2.484-2.971-2.6-.088-.117-.704-.937-.704-1.787 0-.85.443-1.268.601-1.442.158-.173.344-.216.459-.216.115 0 .23 0 .331.006.107.006.251-.041.392.298.144.346.49 1.196.533 1.282.043.086.072.187.014.302-.057.115-.086.187-.172.287-.086.101-.182.226-.26.303-.086.086-.176.18-.076.352.101.172.447.737.96 1.194.66.588 1.216.771 1.388.857.172.086.273.072.374-.044.101-.115.43-.502.545-.674.115-.172.23-.144.387-.086.158.058.991.467 1.163.553.172.086.287.129.33.201.043.072.043.417-.101.822zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.436 5.176L2 22l4.957-1.397C8.421 21.493 10.15 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"></path></svg>
+          <span>Cotizar proyecto similar en Mosquera / Sabana</span>
+        </a>
+      </div>
+
+    </section>
+
+    <!-- 4. SERVICIOS DESTACADOS -->
+    <section id="servicios" class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 flex flex-col gap-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col gap-2 max-w-2xl">
+        <div class="inline-flex items-center gap-1.5 self-start px-3.5 py-1 rounded-full bg-surface-container-highest text-primary font-bold text-[11px] tracking-wider uppercase">
+          <span class="material-symbols-outlined text-sm">potted_plant</span>
+          <span>Maestría Botánica</span>
+        </div>
+        <h2 class="font-serif font-bold text-2xl sm:text-4xl text-primary">Servicios Especializados</h2>
+        <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">
+          Soluciones integrales diseñadas para resistir los cambios térmicos de la Sabana de Bogotá y realzar el valor arquitectónico y emocional de tu inmueble.
+        </p>
+      </div>
+
+      <!-- Services Grid (8 Services) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+
+        <!-- Servicio 1 -->
+        <div onclick="openServiceDetail(1)" class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-primary/5 flex flex-col cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="bg-cover bg-center w-full h-44 relative overflow-hidden" 
+               style="background-image: url('images/mosquera-los-pinos-1.jpg')">
+            <span class="absolute top-3 left-3 px-3 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-[11px] font-bold text-primary uppercase tracking-wider">Integral</span>
+            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1 bg-white text-primary text-xs font-semibold rounded-full shadow">Ver detalles</span>
+            </div>
+          </div>
+          <div class="p-5 flex flex-col flex-1 justify-between gap-3">
+            <div class="flex flex-col gap-2">
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined text-xl">architecture</span>
+                <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">1. Paisajismo &amp; Diseño Integral</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
+                Diseño paisajístico de autor en 3D, modelado topográfico, senderos en piedra y siembra selectiva para fincas, casas de campo y zonas comunes.
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
+              Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div onclick="openServiceDetail(2)" class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-primary/5 flex flex-col cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="bg-cover bg-center w-full h-44 relative overflow-hidden" 
+               style="background-image: url('images/mosquera-los-pinos-2.jpg')">
+            <span class="absolute top-3 left-3 px-3 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-[11px] font-bold text-tertiary uppercase tracking-wider">Regeneración</span>
+            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1 bg-white text-primary text-xs font-semibold rounded-full shadow">Ver detalles</span>
+            </div>
+          </div>
+          <div class="p-5 flex flex-col flex-1 justify-between gap-3">
+            <div class="flex flex-col gap-2">
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined text-xl">eco</span>
+                <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">2. Mantenimiento &amp; Recuperación</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
+                Rescate de césped marchito o amarillento, desyerbe manual selectivo, oxigenación de raíces y nutrición foliar balanceada.
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
+              Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div onclick="openServiceDetail(3)" class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-primary/5 flex flex-col cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="bg-cover bg-center w-full h-44 relative overflow-hidden" 
+               style="background-image: url('images/mosquera-los-pinos-4.jpg')">
+            <span class="absolute top-3 left-3 px-3 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-[11px] font-bold text-primary uppercase tracking-wider">Tecnología</span>
+            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1 bg-white text-primary text-xs font-semibold rounded-full shadow">Ver detalles</span>
+            </div>
+          </div>
+          <div class="p-5 flex flex-col flex-1 justify-between gap-3">
+            <div class="flex flex-col gap-2">
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined text-xl">water_drop</span>
+                <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">3. Riego Tecnificado &amp; Goteo</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
+                Automatización inteligente que ahorra hasta un 40% de agua y asegura hidratación constante frente a las heladas matutinas.
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
+              Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Servicio 4 -->
+        <div onclick="openServiceDetail(4)" class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-primary/5 flex flex-col cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="bg-cover bg-center w-full h-44 relative overflow-hidden" 
+               style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8HtH3YqNPIU_eSWacy3el0jbYtUUFEAoOunEAVwph_RZizgV8sTEDe8CzETqcGu3CsZL2k1H9F_RxyIwWwhbpzY3W-uNrCtsGXnRd8od6qoqT2cRnMRhWOstYEmtjfrDjkb7gXwhM7W3v_T7Bc_q5yxdf9OcU9zYp5qB3fHOnZa0PnikaBnyRrmcofpDb-o8TsOxYGbvewTqD53vN6H5MJ6kA3TdYYJSe_SvGyvyY0qHdlus4GuZQ')">
+            <span class="absolute top-3 left-3 px-3 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-[11px] font-bold text-tertiary uppercase tracking-wider">Seguridad</span>
+            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1 bg-white text-primary text-xs font-semibold rounded-full shadow">Ver detalles</span>
+            </div>
+          </div>
+          <div class="p-5 flex flex-col flex-1 justify-between gap-3">
+            <div class="flex flex-col gap-2">
+              <div class="flex items-center gap-2 text-secondary">
+                <span class="material-symbols-outlined text-xl">content_cut</span>
+                <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">4. Poda Técnica &amp; Tala Controlada</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
+                Poda de formación, aclareo de copas y retiro seguro de árboles de gran envergadura con certificación en alturas y seguros de ley.
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
+              Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Servicio 5 -->
+        <div onclick="openServiceDetail(5)" class="group bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-lg border border-primary/5 flex flex-col justify-between gap-3 cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="flex flex-col gap-2">
+            <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-1">
+              <span class="material-symbols-outlined text-xl">spa</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">5. Jardines Temáticos &amp; Quintas</h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Composiciones estilo Zen, andino silvestre, británico campestre o huertos orgánicos gourmet integrados con armonía espacial.
+            </p>
+          </div>
+          <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
+            Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </div>
+
+        <!-- Servicio 6 -->
+        <div onclick="openServiceDetail(6)" class="group bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-lg border border-primary/5 flex flex-col justify-between gap-3 cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="flex flex-col gap-2">
+            <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-1">
+              <span class="material-symbols-outlined text-xl">wb_sunny</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">6. Jardines de Sol y Sombra</h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Selección botánica exacta según orientación solar, microclimas bajo dosel arbóreo y patios interiores protegidos del viento.
+            </p>
+          </div>
+          <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
+            Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </div>
+
+        <!-- Servicio 7 -->
+        <div onclick="openServiceDetail(7)" class="group bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-lg border border-primary/5 flex flex-col justify-between gap-3 cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="flex flex-col gap-2">
+            <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-1">
+              <span class="material-symbols-outlined text-xl">compost</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">7. Nutrición &amp; Sanidad Orgánica</h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Enmiendas minerales, humus de lombriz californiana y control ecológico de plagas para mantener raíces y follaje vigorosos.
+            </p>
+          </div>
+          <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
+            Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </div>
+
+        <!-- Servicio 8 -->
+        <div onclick="openServiceDetail(8)" class="group bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-lg border border-primary/5 flex flex-col justify-between gap-3 cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="flex flex-col gap-2">
+            <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-1">
+              <span class="material-symbols-outlined text-xl">fence</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">8. Muros Verdes &amp; Terrazas</h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Estructuras hidropónicas vivas y jardines verticales de bajo peso para fachadas, balcones urbanos y terrazas residenciales.
+            </p>
+          </div>
+          <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
+            Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </div>
+
+      </div>
+
+      <!-- Action Button for Services -->
+      <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+        <button onclick="openServiceDetail(1)" class="inline-flex items-center gap-2 py-3 px-6 rounded-full bg-surface-container-high text-primary font-semibold text-sm hover:bg-surface-container-highest transition-colors shadow-sm">
+          <span>Ver catálogo completo de servicios y especies</span>
+          <span class="material-symbols-outlined text-base">arrow_forward</span>
+        </button>
+
+        <button onclick="openModal('calculator-modal')" class="inline-flex items-center gap-2 py-3 px-6 rounded-full bg-primary text-white font-semibold text-sm hover:bg-primary-container transition-colors shadow-sm">
+          <span class="material-symbols-outlined text-base">calculate</span>
+          <span>Calcular presupuesto estimado</span>
+        </button>
+      </div>
+
+    </section>
+
+    <!-- 5. ¿POR QUÉ ELEGIRNOS? / DIFERENCIAL DE CALIDAD -->
+    <section id="diferencial" class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20">
+      <div class="bg-surface-container-low rounded-3xl p-6 sm:p-10 lg:p-12 flex flex-col gap-8 border border-primary/5 shadow-sm">
+        
+        <!-- Header -->
+        <div class="flex flex-col gap-2 max-w-3xl">
+          <div class="inline-flex items-center gap-1.5 self-start px-3.5 py-1 rounded-full bg-surface-container-highest text-primary font-bold text-[11px] tracking-wider uppercase">
+            <span class="material-symbols-outlined text-sm">psychology_alt</span>
+            <span>Diferencial de Calidad</span>
+          </div>
+          <h2 class="font-serif font-bold text-2xl sm:text-4xl text-primary">¿Por qué confiar en Jardineros Nacionales?</h2>
+          <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">
+            Bajo la dirección de <strong>Nicanor Torres</strong>, maestro paisajista y fundador, combinamos el rigor de la arquitectura del paisaje con la dedicación botánica y artesanal de la jardinería tradicional colombiana.
+          </p>
+        </div>
+
+        <!-- 4 Authentic Differential Pillars -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+          
+          <!-- Beneficio 1 -->
+          <div class="flex items-start gap-4 bg-surface-container-lowest p-5 sm:p-6 rounded-2xl border border-primary/5 shadow-sm">
+            <div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-2xl">thermostat</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <h3 class="font-serif font-bold text-lg text-primary">Conocimiento microclimático</h3>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Dominamos los suelos andinos y los choques térmicos de la Sabana (heladas matutinas y radiación UV alta), seleccionando especies idóneas que no se queman.
+              </p>
+            </div>
+          </div>
+
+          <!-- Beneficio 2 -->
+          <div class="flex items-start gap-4 bg-surface-container-lowest p-5 sm:p-6 rounded-2xl border border-primary/5 shadow-sm">
+            <div class="w-12 h-12 rounded-full bg-surface-container-highest text-primary flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-2xl">local_florist</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <h3 class="font-serif font-bold text-lg text-primary">Viveros propios &amp; plantas aclimatadas</h3>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Nuestras especies no provienen de climas cálidos artificiales; se desarrollan aclimatadas al frío cundinamarqués, garantizando un 98% de tasa de prendimiento.
+              </p>
+            </div>
+          </div>
+
+          <!-- Beneficio 3 -->
+          <div class="flex items-start gap-4 bg-surface-container-lowest p-5 sm:p-6 rounded-2xl border border-primary/5 shadow-sm">
+            <div class="w-12 h-12 rounded-full bg-surface-container-highest text-primary flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-2xl">badge</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <h3 class="font-serif font-bold text-lg text-primary">Pulcritud &amp; Equipo formal certificado</h3>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Personal debidamente uniformado, con afiliación a seguridad social completa (ARL, EPS) y certificación vigente para trabajo seguro en alturas y poda.
+              </p>
+            </div>
+          </div>
+
+          <!-- Beneficio 4 -->
+          <div class="flex items-start gap-4 bg-surface-container-lowest p-5 sm:p-6 rounded-2xl border border-primary/5 shadow-sm">
+            <div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-2xl">event_repeat</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <h3 class="font-serif font-bold text-lg text-primary">Acompañamiento post-siembra</h3>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                No dejamos tu proyecto al azar. Ofrecemos garantía de prendimiento vivo y planes periódicos de abonado, podas sanitarias y calibración de sistemas de riego.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. ZONAS DE COBERTURA INTERACTIVAS -->
+    <section id="cobertura" class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 flex flex-col gap-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col gap-2 max-w-2xl">
+        <div class="inline-flex items-center gap-1.5 self-start px-3.5 py-1 rounded-full bg-surface-container-highest text-primary font-bold text-[11px] tracking-wider uppercase">
+          <span class="material-symbols-outlined text-sm">map</span>
+          <span>Área de Cobertura</span>
+        </div>
+        <h2 class="font-serif font-bold text-2xl sm:text-4xl text-primary">Presentes en toda la Sabana</h2>
+        <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">
+          Desplazamos equipos técnicos, maquinaria especializada y plantas aclimatadas directamente hasta tu finca, casa campestre o edificio. Selecciona tu municipio:
+        </p>
+      </div>
+
+      <!-- Interactive Badges Container -->
+      <div class="flex flex-wrap gap-2 sm:gap-2.5" id="zones-container">
+        <button onclick="selectZone('Mosquera', this)" class="coverage-pill px-4 py-2 rounded-full bg-primary text-white font-bold text-xs shadow-sm transition-all">
+          ⭐ Mosquera (Condominio Los Pinos, San Jerónimo)
+        </button>
+        <button onclick="selectZone('Bogotá D.C.', this)" class="coverage-pill px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-secondary-container font-semibold text-xs shadow-sm transition-all">
+          Bogotá D.C. (Norte, Chicó, Rosales, Suba)
+        </button>
+        <button onclick="selectZone('Chía', this)" class="coverage-pill px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-secondary-container font-semibold text-xs shadow-sm transition-all">
+          Chía
+        </button>
+        <button onclick="selectZone('Cajicá', this)" class="coverage-pill px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-secondary-container font-semibold text-xs shadow-sm transition-all">
+          Cajicá
+        </button>
+        <button onclick="selectZone('Sopó', this)" class="coverage-pill px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-secondary-container font-semibold text-xs shadow-sm transition-all">
+          Sopó
+        </button>
+        <button onclick="selectZone('La Calera', this)" class="coverage-pill px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-secondary-container font-semibold text-xs shadow-sm transition-all">
+          La Calera
+        </button>
+        <button onclick="selectZone('Zipaquirá', this)" class="coverage-pill px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-secondary-container font-semibold text-xs shadow-sm transition-all">
+          Zipaquirá
+        </button>
+        <button onclick="selectZone('Tabio', this)" class="coverage-pill px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-secondary-container font-semibold text-xs shadow-sm transition-all">
+          Tabio
+        </button>
+        <button onclick="selectZone('Tenjo', this)" class="coverage-pill px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-secondary-container font-semibold text-xs shadow-sm transition-all">
+          Tenjo
+        </button>
+        <button onclick="selectZone('Cota', this)" class="coverage-pill px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-secondary-container font-semibold text-xs shadow-sm transition-all">
+          Cota
+        </button>
+      </div>
+
+      <!-- Dynamic Zone Information Box -->
+      <div id="zone-details-box" class="bg-surface-container-lowest rounded-2xl p-6 border border-primary/10 shadow-md flex flex-col md:flex-row items-start md:items-center justify-between gap-6 transition-all">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shrink-0 shadow-sm">
+            <span class="material-symbols-outlined text-2xl">location_on</span>
+          </div>
+          <div class="flex flex-col gap-1">
+            <div class="flex items-center gap-2">
+              <span id="zone-name" class="font-serif font-bold text-lg text-primary">Zona seleccionada: Mosquera (Condominio Los Pinos)</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-[11px] font-bold">Proyectos Activos</span>
+            </div>
+            <p id="zone-desc" class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Especialistas en casas campestres, quintas y jardines residenciales contemporáneos. Diseño botánico con macizos de begonias rojas, hortensias y achiras aclimatadas.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 shrink-0 w-full md:w-auto">
+          <a id="zone-whatsapp-btn" href="https://wa.me/573214165095?text=Hola%20Jardineros%20Nacionales,%20quiero%20cotizar%20visita%20en%20Mosquera" 
+             target="_blank" rel="noopener noreferrer" 
+             class="w-full md:w-auto px-5 py-2.5 rounded-full bg-primary hover:bg-primary-container text-white font-semibold text-xs tracking-wide flex items-center justify-center gap-2 transition-all">
+            <span class="material-symbols-outlined text-base">send</span>
+            <span>Solicitar visita en Mosquera</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Presential Valuation Banner -->
+      <div class="bg-surface-container p-5 sm:p-6 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center gap-4 text-primary border border-primary/5">
+        <div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-2xl">pin_drop</span>
+        </div>
+        <div class="flex flex-col gap-1">
+          <p class="text-xs sm:text-sm font-medium text-on-surface">
+            <strong class="text-primary font-bold">Valoración presencial garantizada:</strong> Nos desplazamos a tu predio para diagnosticar suelo, iluminación, vientos y requerimientos botánicos antes de entregar una propuesta formal.
+          </p>
+          <a class="text-xs font-bold text-primary underline flex items-center gap-1 hover:text-secondary transition-colors" 
+             href="https://share.google/441rL7nGpHCRGlVmw" target="_blank" rel="noopener noreferrer">
+            <span>Ver centro de operaciones en Google Maps</span>
+            <span class="material-symbols-outlined text-sm">open_in_new</span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 7. ÚLTIMAS ENTRADAS DEL BLOG / BITÁCORA SABANERA -->
+    <section id="blog" class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 flex flex-col gap-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col gap-2 max-w-2xl">
+        <div class="inline-flex items-center gap-1.5 self-start px-3.5 py-1 rounded-full bg-surface-container-highest text-primary font-bold text-[11px] tracking-wider uppercase">
+          <span class="material-symbols-outlined text-sm">menu_book</span>
+          <span>Bitácora Sabanera</span>
+        </div>
+        <h2 class="font-serif font-bold text-2xl sm:text-4xl text-primary">Consejos &amp; Guías Botánicas</h2>
+        <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">
+          Conocimiento técnico y práctico para cultivar, proteger y embellecer tu espacio natural durante cada época del año en los Andes colombianos.
+        </p>
+      </div>
+
+      <!-- Articles Grid (3 Articles) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Artículo 1 -->
+        <article onclick="openArticle(1)" class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-lg border border-primary/5 flex flex-col justify-between gap-4 group cursor-pointer transition-all duration-300">
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center justify-between text-tertiary">
+              <span class="text-[11px] font-bold uppercase tracking-wider bg-surface-container px-2.5 py-0.5 rounded-full">Clima &amp; Heladas</span>
+              <span class="text-xs text-outline font-medium">5 min de lectura</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors leading-snug">
+              Cómo preparar tu jardín de la Sabana para la temporada de heladas
+            </h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
+              Estrategias de acolchado orgánico (mulch), riegos estratégicos antes del amanecer y lonas térmicas protectoras para evitar que el rocío congelado queme los brotes tiernos.
+            </p>
+          </div>
+          <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline pt-2">
+            Leer artículo completo <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </article>
+
+        <!-- Artículo 2 -->
+        <article onclick="openArticle(2)" class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-lg border border-primary/5 flex flex-col justify-between gap-4 group cursor-pointer transition-all duration-300">
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center justify-between text-tertiary">
+              <span class="text-[11px] font-bold uppercase tracking-wider bg-surface-container px-2.5 py-0.5 rounded-full">Jardinería Urbana</span>
+              <span class="text-xs text-outline font-medium">4 min de lectura</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors leading-snug">
+              Los mejores muros verdes para terrazas en apartamentos bogotanos
+            </h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
+              Las 7 especies que toleran el viento en pisos altos y cómo planificar drenajes perimetrales e impermeabilización sin afectar la estructura del edificio.
+            </p>
+          </div>
+          <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline pt-2">
+            Leer artículo completo <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </article>
+
+        <!-- Artículo 3 -->
+        <article onclick="openArticle(3)" class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-lg border border-primary/5 flex flex-col justify-between gap-4 group cursor-pointer transition-all duration-300">
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center justify-between text-tertiary">
+              <span class="text-[11px] font-bold uppercase tracking-wider bg-surface-container px-2.5 py-0.5 rounded-full">Eficiencia Hídrica</span>
+              <span class="text-xs text-outline font-medium">6 min de lectura</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors leading-snug">
+              Guía de riego inteligente: ahorra agua y mantén tu césped esmeralda
+            </h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
+              Aprende a programar aspersores según la pluviometría sabanera para evitar hongos radiculares y optimizar el consumo del agua de pozo o acueducto.
+            </p>
+          </div>
+          <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline pt-2">
+            Leer artículo completo <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- 8. LLAMADO A LA ACCIÓN FINAL (CTA) -->
+    <section id="contacto" class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20">
+      <div class="bg-primary text-white rounded-3xl p-6 sm:p-10 lg:p-12 flex flex-col gap-6 relative overflow-hidden shadow-2xl">
+        
+        <!-- Decorative Glow Background -->
+        <div class="absolute -right-16 -bottom-16 w-64 h-64 rounded-full bg-secondary-container/15 pointer-events-none blur-2xl"></div>
+        <div class="absolute -left-16 -top-16 w-64 h-64 rounded-full bg-white/5 pointer-events-none blur-2xl"></div>
+
+        <div class="flex items-center gap-2 text-secondary-container relative z-10">
+          <span class="material-symbols-outlined text-2xl">energy_savings_leaf</span>
+          <span class="text-[11px] font-bold uppercase tracking-widest">Inicia tu proyecto verde</span>
+        </div>
+
+        <div class="flex flex-col gap-2 max-w-2xl relative z-10">
+          <h2 class="font-serif font-bold text-2xl sm:text-4xl text-white">Cuéntanos sobre tu jardín</h2>
+          <p class="text-sm sm:text-base text-surface-container-high leading-relaxed">
+            ¿Quieres transformar tu casa campestre, quinta o terraza con paisajismo de autor? Escríbenos directamente o agenda una visita técnica en tu predio con el maestro Nicanor Torres.
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2 relative z-10">
+          
+          <a class="min-h-[50px] px-6 py-3 rounded-full bg-[#25D366] text-white flex items-center justify-center gap-2 font-semibold text-sm sm:text-base shadow-lg hover:bg-[#20ba59] active:scale-95 transition-all" 
+             href="https://wa.me/573214165095?text=Hola%20Jardineros%20Nacionales,%20quiero%20agendar%20una%20visita%20t%C3%A9cnica%20para%20mi%20predio" 
+             target="_blank" rel="noopener noreferrer">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.58 1.968.928 3.149.929 3.182 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.146-.525-1.745-.722-2.884-2.484-2.971-2.6-.088-.117-.704-.937-.704-1.787 0-.85.443-1.268.601-1.442.158-.173.344-.216.459-.216.115 0 .23 0 .331.006.107.006.251-.041.392.298.144.346.49 1.196.533 1.282.043.086.072.187.014.302-.057.115-.086.187-.172.287-.086.101-.182.226-.26.303-.086.086-.176.18-.076.352.101.172.447.737.96 1.194.66.588 1.216.771 1.388.857.172.086.273.072.374-.044.101-.115.43-.502.545-.674.115-.172.23-.144.387-.086.158.058.991.467 1.163.553.172.086.287.129.33.201.043.072.043.417-.101.822zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.436 5.176L2 22l4.957-1.397C8.421 21.493 10.15 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"></path></svg>
+            <span>Escribir por WhatsApp ahora</span>
+          </a>
+
+          <button onclick="openModal('contact-modal')" 
+                  class="min-h-[50px] px-6 py-3 rounded-full bg-white/15 backdrop-blur-md text-white hover:bg-white/25 border border-white/20 flex items-center justify-center gap-2 font-medium text-sm sm:text-base transition-all">
+            <span class="material-symbols-outlined text-lg">calendar_month</span>
+            <span>Agendar formulario de visita</span>
+          </button>
+
+          <button onclick="openModal('calculator-modal')" 
+                  class="min-h-[50px] px-6 py-3 rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed flex items-center justify-center gap-2 font-semibold text-sm sm:text-base transition-all">
+            <span class="material-symbols-outlined text-lg">calculate</span>
+            <span>Cotizador online</span>
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="mt-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24 md:pb-12 bg-surface-container-low border-t border-primary/5">
+    <div class="max-w-6xl mx-auto flex flex-col gap-10">
+      
+      <!-- Top footer section -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        
+        <!-- Col 1: Brand -->
+        <div class="md:col-span-2 flex flex-col gap-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white shadow-sm">
+              <span class="material-symbols-outlined text-2xl">yard</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-serif font-bold text-xl text-primary leading-tight">Jardineros Nacionales</span>
+              <span class="text-xs font-semibold text-tertiary">Fundado y dirigido por Nicanor Torres</span>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-on-surface-variant max-w-md leading-relaxed">
+            Diseño, transformación, rescate y mantenimiento de jardines de alta gama en Bogotá, Mosquera, La Calera, Chía, Cajicá, Sopó y toda Cundinamarca. Maestría botánica y compromiso ecológico.
+          </p>
+          <a class="inline-flex items-center gap-2 self-start px-4 py-2 rounded-full bg-surface-container-highest text-primary font-bold text-xs uppercase hover:bg-secondary-container transition-colors shadow-sm" 
+             href="https://share.google/441rL7nGpHCRGlVmw" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-sm">location_on</span>
+            <span>Bogotá &amp; Sabana de Cundinamarca — Maps</span>
+          </a>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="flex flex-col gap-3">
+          <span class="text-xs font-bold text-tertiary uppercase tracking-wider">Navegación</span>
+          <div class="flex flex-col gap-2 text-xs sm:text-sm">
+            <a href="#inicio" class="text-on-surface hover:text-primary transition-colors">Inicio</a>
+            <a href="#galeria" class="text-on-surface hover:text-primary transition-colors">Galería &amp; Proyectos Vivos</a>
+            <a href="#servicios" class="text-on-surface hover:text-primary transition-colors">Servicios Botánicos</a>
+            <a href="#diferencial" class="text-on-surface hover:text-primary transition-colors">Diferencial &amp; Experiencia</a>
+            <a href="#cobertura" class="text-on-surface hover:text-primary transition-colors">Municipios Cobertura</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Direct Contact -->
+        <div class="flex flex-col gap-3">
+          <span class="text-xs font-bold text-tertiary uppercase tracking-wider">Contacto Directo</span>
+          <div class="flex flex-col gap-2.5 text-xs sm:text-sm">
+            <a href="tel:+573214165095" class="flex items-center gap-2 text-on-surface hover:text-primary font-medium">
+              <span class="material-symbols-outlined text-base text-primary">call</span>
+              <span>+57 321 416 5095</span>
+            </a>
+            <a href="mailto:contacto@nicanortorres.com" class="flex items-center gap-2 text-on-surface hover:text-primary font-medium">
+              <span class="material-symbols-outlined text-base text-primary">mail</span>
+              <span>contacto@nicanortorres.com</span>
+            </a>
+            <div class="flex items-center gap-3 pt-2 text-on-surface-variant">
+              <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="w-9 h-9 flex items-center justify-center rounded-full bg-surface-container hover:bg-primary hover:text-white transition-all">
+                <span class="material-symbols-outlined text-lg">photo_camera</span>
+              </a>
+              <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="w-9 h-9 flex items-center justify-center rounded-full bg-surface-container hover:bg-primary hover:text-white transition-all">
+                <span class="material-symbols-outlined text-lg">public</span>
+              </a>
+              <a href="https://wa.me/573214165095" target="_blank" aria-label="WhatsApp" class="w-9 h-9 flex items-center justify-center rounded-full bg-[#25D366] text-white hover:scale-105 transition-all">
+                <span class="material-symbols-outlined text-lg">chat</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom copyright notice -->
+      <div class="border-t border-primary/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] font-semibold text-outline uppercase tracking-wider">
+        <span>© Jardineros Nacionales · Nicanor Torres (Fundador &amp; Maestro Paisajista).</span>
+        <span>Arquitectura &amp; Paisajismo Andino de Alta Gama</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+  <div class="fixed bottom-20 md:bottom-8 right-4 sm:right-6 z-40 flex items-center gap-2">
+    <div class="hidden sm:flex items-center px-4 py-2 rounded-full bg-white/95 backdrop-blur-md shadow-lg border border-primary/10 text-xs font-bold text-primary tracking-wide uppercase">
+      ¿Hablamos de tu jardín?
+    </div>
+    <a aria-label="WhatsApp Asesoría" 
+       class="w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-[0_8px_24px_rgba(37,211,102,0.4)] hover:scale-110 active:scale-95 transition-all animate-pulse-subtle" 
+       href="https://wa.me/573214165095?text=Hola%20Jardineros%20Nacionales,%20deseo%20asesor%C3%ADa%20para%20mi%20jard%C3%ADn" 
+       target="_blank" rel="noopener noreferrer">
+      <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.58 1.968.928 3.149.929 3.182 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.146-.525-1.745-.722-2.884-2.484-2.971-2.6-.088-.117-.704-.937-.704-1.787 0-.85.443-1.268.601-1.442.158-.173.344-.216.459-.216.115 0 .23 0 .331.006.107.006.251-.041.392.298.144.346.49 1.196.533 1.282.043.086.072.187.014.302-.057.115-.086.187-.172.287-.086.101-.182.226-.26.303-.086.086-.176.18-.076.352.101.172.447.737.96 1.194.66.588 1.216.771 1.388.857.172.086.273.072.374-.044.101-.115.43-.502.545-.674.115-.172.23-.144.387-.086.158.058.991.467 1.163.553.172.086.287.129.33.201.043.072.043.417-.101.822zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.436 5.176L2 22l4.957-1.397C8.421 21.493 10.15 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"></path></svg>
+    </a>
+  </div>
+
+  <!-- ================= MOBILE BOTTOM NAVIGATION BAR ================= -->
+  <nav class="md:hidden fixed bottom-0 w-full z-40 pb-safe bg-surface/95 backdrop-blur-xl border-t border-primary/10 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
+    <div class="flex items-center justify-around h-16 px-2">
+      <a href="#inicio" class="flex flex-col items-center justify-center gap-0.5 min-w-[50px] text-primary font-bold">
+        <span class="material-symbols-outlined text-2xl">yard</span>
+        <span class="text-[10px] font-bold">Inicio</span>
+      </a>
+      <a href="#galeria" class="flex flex-col items-center justify-center gap-0.5 min-w-[50px] text-on-surface-variant hover:text-primary">
+        <span class="material-symbols-outlined text-2xl">photo_library</span>
+        <span class="text-[10px] font-medium">Galería</span>
+      </a>
+      <a href="#servicios" class="flex flex-col items-center justify-center gap-0.5 min-w-[50px] text-on-surface-variant hover:text-primary">
+        <span class="material-symbols-outlined text-2xl">potted_plant</span>
+        <span class="text-[10px] font-medium">Servicios</span>
+      </a>
+      <a href="#cobertura" class="flex flex-col items-center justify-center gap-0.5 min-w-[50px] text-on-surface-variant hover:text-primary">
+        <span class="material-symbols-outlined text-2xl">map</span>
+        <span class="text-[10px] font-medium">Zonas</span>
+      </a>
+      <button onclick="openModal('calculator-modal')" class="flex flex-col items-center justify-center gap-0.5 min-w-[50px] text-on-surface-variant hover:text-primary">
+        <span class="material-symbols-outlined text-2xl text-secondary">calculate</span>
+        <span class="text-[10px] font-medium">Cotizar</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ================= INTERACTIVE MODALS ================= -->
+
+  <!-- 1. CALCULADORA / COTIZADOR MODAL -->
+  <div id="calculator-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+    <div class="modal-backdrop fixed inset-0" onclick="closeModal('calculator-modal')"></div>
+    <div class="relative bg-surface-container-lowest rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl border border-primary/10 z-10">
+      
+      <!-- Close button -->
+      <button onclick="closeModal('calculator-modal')" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors">
+        <span class="material-symbols-outlined text-lg">close</span>
+      </button>
+
+      <div class="flex items-center gap-2 text-primary mb-1">
+        <span class="material-symbols-outlined text-2xl">calculate</span>
+        <span class="text-xs font-bold uppercase tracking-wider">Estimador Inteligente</span>
+      </div>
+      <h3 class="font-serif font-bold text-2xl text-primary">Calcula tu Proyecto de Jardinería</h3>
+      <p class="text-xs sm:text-sm text-on-surface-variant mt-1 mb-6">
+        Selecciona las características de tu espacio para estimar el alcance técnico y generar una cotización instantánea.
+      </p>
+
+      <form id="calc-form" onsubmit="generateQuote(event)" class="flex flex-col gap-5">
+        
+        <!-- Space Type -->
+        <div class="flex flex-col gap-1.5">
+          <label class="text-xs font-bold text-primary uppercase tracking-wide">1. Tipo de predio o espacio:</label>
+          <select id="calc-type" class="w-full px-4 py-2.5 rounded-xl bg-surface-container-low border border-primary/10 text-sm font-medium focus:ring-2 focus:ring-primary focus:outline-none">
+            <option value="Casa Campestre / Quinta (Mosquera, Chía, Sabana)">Casa Campestre / Quinta (Mosquera, Chía, Sabana)</option>
+            <option value="Terraza o Ático Penthouse">Terraza o Ático Penthouse (Bogotá)</option>
+            <option value="Jardín Residencial Privado">Jardín Residencial Privado</option>
+            <option value="Conjunto Residencial o Zonas Comunes">Conjunto Residencial o Zonas Comunes</option>
+            <option value="Muro Verde / Jardín Vertical">Muro Verde / Jardín Vertical</option>
+          </select>
+        </div>
+
+        <!-- Square Meters Slider -->
+        <div class="flex flex-col gap-2">
+          <div class="flex justify-between items-center">
+            <label class="text-xs font-bold text-primary uppercase tracking-wide">2. Área aproximada:</label>
+            <span id="calc-area-label" class="text-sm font-bold text-secondary">250 m²</span>
+          </div>
+          <input type="range" id="calc-area" min="20" max="2500" step="10" value="250" 
+                 oninput="document.getElementById('calc-area-label').innerText = this.value + ' m²'"
+                 class="w-full accent-primary h-2 bg-surface-container rounded-lg cursor-pointer">
+          <div class="flex justify-between text-[11px] text-on-surface-variant font-medium">
+            <span>20 m² (patio)</span>
+            <span>250 m² (quinta)</span>
+            <span>2.500 m²+ (finca)</span>
+          </div>
+        </div>
+
+        <!-- Service Needs -->
+        <div class="flex flex-col gap-2">
+          <label class="text-xs font-bold text-primary uppercase tracking-wide">3. Servicios que requieres:</label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+            <label class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container">
+              <input type="checkbox" name="service" value="Diseño Paisajístico Nuevo" checked class="accent-primary">
+              <span>Diseño y siembra nueva</span>
+            </label>
+            <label class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container">
+              <input type="checkbox" name="service" value="Recuperación de Prado" class="accent-primary">
+              <span>Recuperación / Nivelación</span>
+            </label>
+            <label class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container">
+              <input type="checkbox" name="service" value="Sistema de Riego Automatizado" class="accent-primary">
+              <span>Riego tecnificado</span>
+            </label>
+            <label class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container">
+              <input type="checkbox" name="service" value="Poda Técnica de Árboles" class="accent-primary">
+              <span>Poda técnica / Tala</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="flex flex-col gap-1.5">
+          <label class="text-xs font-bold text-primary uppercase tracking-wide">4. Municipio / Ubicación:</label>
+          <select id="calc-location" class="w-full px-4 py-2.5 rounded-xl bg-surface-container-low border border-primary/10 text-sm font-medium focus:ring-2 focus:ring-primary focus:outline-none">
+            <option value="Mosquera (Condominio Los Pinos / Quintas)">Mosquera (Condominio Los Pinos / Quintas)</option>
+            <option value="Bogotá D.C.">Bogotá D.C.</option>
+            <option value="Chía">Chía</option>
+            <option value="Cajicá">Cajicá</option>
+            <option value="Sopó">Sopó</option>
+            <option value="La Calera">La Calera</option>
+            <option value="Zipaquirá">Zipaquirá</option>
+            <option value="Tabio / Tenjo / Cota">Tabio / Tenjo / Cota</option>
+          </select>
+        </div>
+
+        <!-- Result Box -->
+        <div class="bg-surface-container p-4 rounded-2xl flex items-center gap-3 border border-primary/10">
+          <span class="material-symbols-outlined text-2xl text-primary">verified</span>
+          <div class="flex flex-col">
+            <span class="text-xs font-bold text-primary">Diagnóstico Técnico y Visita</span>
+            <span class="text-xs text-on-surface-variant">Generaremos un resumen listo para ser enviado a Nicanor Torres por WhatsApp.</span>
+          </div>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 px-6 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-sm shadow-lg flex items-center justify-center gap-2 transition-all">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.58 1.968.928 3.149.929 3.182 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.146-.525-1.745-.722-2.884-2.484-2.971-2.6-.088-.117-.704-.937-.704-1.787 0-.85.443-1.268.601-1.442.158-.173.344-.216.459-.216.115 0 .23 0 .331.006.107.006.251-.041.392.298.144.346.49 1.196.533 1.282.043.086.072.187.014.302-.057.115-.086.187-.172.287-.086.101-.182.226-.26.303-.086.086-.176.18-.076.352.101.172.447.737.96 1.194.66.588 1.216.771 1.388.857.172.086.273.072.374-.044.101-.115.43-.502.545-.674.115-.172.23-.144.387-.086.158.058.991.467 1.163.553.172.086.287.129.33.201.043.072.043.417-.101.822zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.436 5.176L2 22l4.957-1.397C8.421 21.493 10.15 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"></path></svg>
+          <span>Enviar Solicitud a WhatsApp</span>
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- 2. CONTACTO / FORMULARIO DE VISITA TÉCNICA MODAL -->
+  <div id="contact-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+    <div class="modal-backdrop fixed inset-0" onclick="closeModal('contact-modal')"></div>
+    <div class="relative bg-surface-container-lowest rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl border border-primary/10 z-10">
+      
+      <button onclick="closeModal('contact-modal')" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors">
+        <span class="material-symbols-outlined text-lg">close</span>
+      </button>
+
+      <div class="flex items-center gap-2 text-primary mb-1">
+        <span class="material-symbols-outlined text-2xl">calendar_month</span>
+        <span class="text-xs font-bold uppercase tracking-wider">Agendamiento Oficial</span>
+      </div>
+      <h3 class="font-serif font-bold text-2xl text-primary">Solicitar Visita Técnica Presencial</h3>
+      <p class="text-xs sm:text-sm text-on-surface-variant mt-1 mb-6">
+        Vamos a tu propiedad en Mosquera, Bogotá o cualquier municipio de la Sabana para diagnosticar tipo de tierra, exposición solar y requerimientos botánicos.
+      </p>
+
+      <form id="booking-form" onsubmit="submitBooking(event)" class="flex flex-col gap-4">
+        
+        <div class="flex flex-col gap-1">
+          <label class="text-xs font-bold text-primary uppercase">Nombre y Apellido *</label>
+          <input type="text" id="book-name" required placeholder="Ej. Carlos Mendoza" class="w-full px-4 py-2.5 rounded-xl bg-surface-container-low border border-primary/10 text-sm focus:ring-2 focus:ring-primary focus:outline-none">
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label class="text-xs font-bold text-primary uppercase">Teléfono / WhatsApp *</label>
+          <input type="tel" id="book-phone" required placeholder="Ej. 320 123 4567" class="w-full px-4 py-2.5 rounded-xl bg-surface-container-low border border-primary/10 text-sm focus:ring-2 focus:ring-primary focus:outline-none">
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label class="text-xs font-bold text-primary uppercase">Ubicación o Condominio *</label>
+          <input type="text" id="book-location" required placeholder="Ej. Condominio Los Pinos, Mosquera" class="w-full px-4 py-2.5 rounded-xl bg-surface-container-low border border-primary/10 text-sm focus:ring-2 focus:ring-primary focus:outline-none">
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label class="text-xs font-bold text-primary uppercase">Detalles del trabajo</label>
+          <textarea id="book-notes" rows="3" placeholder="Cuéntanos brevemente qué deseas realizar en tu jardín..." class="w-full px-4 py-2.5 rounded-xl bg-surface-container-low border border-primary/10 text-sm focus:ring-2 focus:ring-primary focus:outline-none"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 px-6 rounded-full bg-primary hover:bg-primary-container text-white font-bold text-sm shadow-md flex items-center justify-center gap-2 transition-all mt-2">
+          <span class="material-symbols-outlined text-lg">check_circle</span>
+          <span>Confirmar y Enviar Solicitud</span>
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- 3. DETALLE DE SERVICIO MODAL -->
+  <div id="service-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+    <div class="modal-backdrop fixed inset-0" onclick="closeModal('service-modal')"></div>
+    <div class="relative bg-surface-container-lowest rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl border border-primary/10 z-10">
+      
+      <button onclick="closeModal('service-modal')" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors">
+        <span class="material-symbols-outlined text-lg">close</span>
+      </button>
+
+      <div id="service-modal-content" class="flex flex-col gap-4">
+        <!-- Injected via JavaScript -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 4. LIGHTBOX DE GALERÍA MODAL -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+    <div class="modal-backdrop fixed inset-0" onclick="closeModal('lightbox-modal')"></div>
+    <div class="relative bg-surface-container-lowest rounded-3xl max-w-4xl w-full max-h-[92vh] overflow-y-auto overflow-hidden shadow-2xl border border-primary/10 z-10">
+      
+      <button onclick="closeModal('lightbox-modal')" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-black transition-colors">
+        <span class="material-symbols-outlined text-xl">close</span>
+      </button>
+
+      <div id="lightbox-content" class="flex flex-col">
+        <!-- Injected via JavaScript -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 5. LECTOR DE ARTÍCULO DE BLOG MODAL -->
+  <div id="article-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+    <div class="modal-backdrop fixed inset-0" onclick="closeModal('article-modal')"></div>
+    <div class="relative bg-surface-container-lowest rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-10 shadow-2xl border border-primary/10 z-10">
+      
+      <button onclick="closeModal('article-modal')" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors">
+        <span class="material-symbols-outlined text-lg">close</span>
+      </button>
+
+      <div id="article-content" class="flex flex-col gap-4">
+        <!-- Injected via JavaScript -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= JAVASCRIPT LOGIC ================= -->
+  <script>
+    // Data for Zones
+    const zoneData = {
+      'Mosquera': {
+        name: 'Mosquera (Condominio Los Pinos, San Jerónimo, Novaterra, Sabana Occidente)',
+        desc: 'Especialistas en casas campestres, casas quintas y jardines residenciales contemporáneos. Diseño botánico con macizos de begonias rojas, hortensias y achiras aclimatadas.'
+      },
+      'Bogotá D.C.': {
+        name: 'Bogotá D.C. (Norte, Cerros, Chicó, Rosales, Usaquén, Suba)',
+        desc: 'Atención prioritaria en zonas urbanas, balcones, terrazas de áticos y jardines de casas coloniales. Cuadrillas técnicas permanentes con respuesta en menos de 24h.'
+      },
+      'Chía': {
+        name: 'Chía (Sindamanoy, Yerbabuena, Fonquetá, La Balsa)',
+        desc: 'Especialistas en fincas campestres, nivelación de prados kikuyo y setos protectores contra heladas sabaneras. Cuadrillas asignadas de lunes a sábado.'
+      },
+      'Cajicá': {
+        name: 'Cajicá (Milla de Oro, Rincón del Chico, Calahorra)',
+        desc: 'Mantenimiento y paisajismo integral para conjuntos residenciales cerrados, casas campestres y sistemas de aspersión automatizados.'
+      },
+      'Sopó': {
+        name: 'Sopó (Aposentos, Briceño, Meusa)',
+        desc: 'Diseño botánico de grandes extensiones, senderos con hortensias andinas, alisos, urapanes y conformación de lagos decorativos.'
+      },
+      'La Calera': {
+        name: 'La Calera (2.750 msnm — San Rafael, Macadamia)',
+        desc: 'Resistencia a vientos de montaña y bajas temperaturas. Especies andinas nativas: siete cueros, salvias, arrayanes y lavandas.'
+      },
+      'Zipaquirá': {
+        name: 'Zipaquirá (Zona Campestre & Centro)',
+        desc: 'Recuperación de praderas, abonado orgánico profundo con humus de lombriz y poda técnica de arbolado nativo.'
+      },
+      'Tabio': {
+        name: 'Tabio (El Chuscal, Río Frío, La Florida)',
+        desc: 'Huertos orgánicos gourmet, jardines silvestres biofílicos y protección de cuencas con especies nativas polinizadoras.'
+      },
+      'Tenjo': {
+        name: 'Tenjo (Chitasuga, Juaica, Poveda)',
+        desc: 'Paisajismo de autor en haciendas históricas, diseño de cercas vivas en eugenia y nivelación de terrenos inclinados.'
+      },
+      'Cota': {
+        name: 'Cota (Siberia, Parcelaciones El Abra)',
+        desc: 'Diseño de prados de alta resistencia, muros verdes en sedes corporativas y jardines residenciales con riego por goteo.'
+      }
+    };
+
+    function selectZone(zoneName, element) {
+      const pills = document.querySelectorAll('.coverage-pill');
+      pills.forEach(p => {
+        p.classList.remove('bg-primary', 'text-white', 'font-bold');
+        p.classList.add('bg-surface-container-lowest', 'text-on-surface', 'font-semibold');
+      });
+
+      if (element) {
+        element.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+        element.classList.add('bg-primary', 'text-white', 'font-bold');
+      }
+
+      const data = zoneData[zoneName] || { name: zoneName, desc: 'Cobertura completa en toda la provincia con visitas de diagnóstico botánico.' };
+      document.getElementById('zone-name').innerText = 'Zona seleccionada: ' + data.name;
+      document.getElementById('zone-desc').innerText = data.desc;
+      document.getElementById('zone-whatsapp-btn').href = `https://wa.me/573214165095?text=Hola%20Jardineros%20Nacionales,%20quiero%20cotizar%20visita%20en%20${encodeURIComponent(zoneName)}`;
+    }
+
+    // Modal Handlers
+    function openModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // Modal Data: Services Detail
+    const servicesDetailData = {
+      1: {
+        title: "Paisajismo y Diseño Integral de Jardines",
+        category: "Integral de Autor",
+        image: "images/mosquera-los-pinos-1.jpg",
+        desc: "Conceptualizamos tu espacio verde desde cero o remodelamos jardines existentes. Integramos topografía, piedra natural, iluminación exterior y selección botánica especializada para el clima de la Sabana de Bogotá y Cundinamarca.",
+        features: [
+          "Diseño preliminar y plano de implantación botánica.",
+          "Preparación profunda de suelo, descompactación y enmiendas orgánicas.",
+          "Siembra de especies adultas y aclimatadas de vivero propio.",
+          "Garantía de prendimiento y guía de cuidados durante los primeros 90 días."
+        ]
+      },
+      2: {
+        title: "Mantenimiento y Recuperación de Jardines y Prados",
+        category: "Regeneración Botánica",
+        image: "images/mosquera-los-pinos-2.jpg",
+        desc: "Revitalizamos jardines marchitos, con maleza invasiva, musgo o césped deteriorado por el sol y las heladas. Aplicamos técnicas de aireación, recebado y fertilización balanceada.",
+        features: [
+          "Desyerbe manual selectivo sin herbicidas agresivos.",
+          "Aireación y recebado con tierra vegetal enriquecida y humus.",
+          "Poda sanitaria y estimulación de floración en arbustos.",
+          "Planes periódicos mensuales o quincenales para conjuntos y fincas."
+        ]
+      },
+      3: {
+        title: "Sistemas de Riego Tecnificado por Goteo y Aspersión",
+        category: "Eficiencia Hídrica",
+        image: "images/mosquera-los-pinos-4.jpg",
+        desc: "Instalación de controladores automáticos con sensores de lluvia y humedad para mantener el césped siempre verde y evitar el desperdicio de agua potable.",
+        features: [
+          "Micro-aspersores de alta cobertura para césped y praderas.",
+          "Goteo subterráneo localizado para macizos de flores y setos.",
+          "Programación inteligente para riegos antes del alba (anti-heladas).",
+          "Conexión a tanques de recolección de aguas lluvias."
+        ]
+      },
+      4: {
+        title: "Poda Técnica de Altura y Tala Controlada",
+        category: "Seguridad & Silvicultura",
+        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuD8HtH3YqNPIU_eSWacy3el0jbYtUUFEAoOunEAVwph_RZizgV8sTEDe8CzETqcGu3CsZL2k1H9F_RxyIwWwhbpzY3W-uNrCtsGXnRd8od6qoqT2cRnMRhWOstYEmtjfrDjkb7gXwhM7W3v_T7Bc_q5yxdf9OcU9zYp5qB3fHOnZa0PnikaBnyRrmcofpDb-o8TsOxYGbvewTqD53vN6H5MJ6kA3TdYYJSe_SvGyvyY0qHdlus4GuZQ",
+        desc: "Intervención profesional de árboles de gran porte (eucaliptos, pinos, acacias, sauces y robles) con equipos de arboricultura certificados y trituración de restos vegetales.",
+        features: [
+          "Poda de aclareo para permitir el paso de luz solar al césped.",
+          "Poda de seguridad para evitar caídas sobre techos o cables eléctricos.",
+          "Personal con curso de alturas avanzado y seguros de ley (ARL).",
+          "Retiro y disposición final de biomasa cumpliendo normatividad CAR/SDA."
+        ]
+      },
+      5: {
+        title: "Jardines Temáticos: Casas Campestres, Quintas & Zen",
+        category: "Estilo & Vanguardia",
+        image: "images/mosquera-los-pinos-5.jpg",
+        desc: "Creamos ambientes conceptuales a la medida: desde la integración de casas quintas modernas con macizos de begonias y achiras, hasta huertos culinarios y jardines zen.",
+        features: [
+          "Macizos perimetrales de begonias, hortensias y cortaderias.",
+          "Huertos orgánicos en cajoneras elevadas de madera inmunizada.",
+          "Jardines campestres con rosas andinas y borduras florales perennes.",
+          "Atracción de aves nativas (colibríes y mirlas sabaneras)."
+        ]
+      },
+      6: {
+        title: "Jardines Especializados de Sol Directo y Sombra",
+        category: "Adaptación Botánica",
+        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAq0YO3VVQURZ9IkIOC905t0naJpQB7mZvb0RIEZOPV2lC0j5jXqgZhFB490ds0MFkItw3PNKXSR7DNv-1JH3M0CN2-9lvmz87fz9IcSr3GZJEvY_DihKr5uYPRseBpqlipQCh7sjnAPeXq0zqg8WiMNXEtszG0cMk3Q3htKtYSqKcN1BrsGWD5VJb1PSgIZ24wlpMHBdWI11z_uMK9CdMFlTlcZsFy4sUIjS_4WlQNAlH-sTyZfIK2",
+        desc: "Cada rincón tiene una microclima específico. Analizamos la trayectoria del sol a lo largo del año para sembrar exactamente las plantas que florecerán sin quemarse ni marchitarse.",
+        features: [
+          "Para sombra húmeda: helechos arbóreos, calas, begonias y monsteras.",
+          "Para sol intenso: agapantos, salvias, achiras, durantas y lavandas.",
+          "Sustratos con retención hídrica diferenciada según zona.",
+          "Coberturas vegetales tapizantes como sustitutos de césped en sombra."
+        ]
+      },
+      7: {
+        title: "Nutrición Orgánica y Sanidad Vegetal Ecológica",
+        category: "Biotecnología & Suelos",
+        image: "images/mosquera-los-pinos-3.jpg",
+        desc: "El secreto de un jardín verde y tupido radica en la salud microbiológica de su tierra. Usamos fertilizantes 100% orgánicos, micorrizas y caldos minerales protectores.",
+        features: [
+          "Aplicación de humus de lombriz líquido y sólido.",
+          "Corrección de pH en suelos arcillosos o excesivamente ácidos.",
+          "Control biológico de pulgones, babosas, orugas y hongos foliares.",
+          "Inoculación de microorganismos benéficos para raíces fuertes."
+        ]
+      },
+      8: {
+        title: "Muros Verdes Hidropónicos y Terrazas Biofílicas",
+        category: "Paisajismo Vertical",
+        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCMWis3caLHWpuzM96J5FZvCMlJplknmw9n6v6Cpy6CvWb-xGpJhVo60_n4ymYtdlgi99pzSd8rZjX3HmHffP1ZZQLYhGFzcTwlgTi3jNPOTcHq3pIHpbx6wbGmr4PRMm4hztZ2TTWevJ_J4SSO4sICGfYPLvXH3RX5v_MhivfAJq65WyLX0amjKAew2-DJZTgH-nWQNTdWZbmETrX3AT_qXfzaIZN4UFirQRsNZWLrcjSQf7OrSN0J",
+        desc: "Sistemas modulares verticales de bajo peso diseñados para balcones, terrazas de apartamentos y muros divisorios en Bogotá y Sabana.",
+        features: [
+          "Estructura liviana de aluminio y fieltros no degradables.",
+          "Riego por recirculación cerrada sin riesgo de filtraciones a vecinos.",
+          "Plantas purificadoras de aire y resistentes a las corrientes de aire.",
+          "Aislamiento térmico y sonoro natural para tu vivienda."
+        ]
+      }
+    };
+
+    function openServiceDetail(id) {
+      const s = servicesDetailData[id];
+      if (!s) return;
+
+      const html = `
+        <div class="w-full h-56 rounded-2xl bg-cover bg-center relative overflow-hidden" style="background-image: url('${s.image}')">
+          <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-primary/90 text-white font-bold text-xs uppercase tracking-wider">${s.category}</span>
+        </div>
+        <div class="flex flex-col gap-2 mt-2">
+          <h2 class="font-serif font-bold text-2xl text-primary">${s.title}</h2>
+          <p class="text-sm text-on-surface-variant leading-relaxed">${s.desc}</p>
+        </div>
+        <div class="flex flex-col gap-2 bg-surface-container-low p-4 rounded-2xl">
+          <h4 class="text-xs font-bold text-primary uppercase tracking-wide">¿Qué incluye este servicio?</h4>
+          <ul class="flex flex-col gap-1.5 text-xs sm:text-sm text-on-surface">
+            ${s.features.map(f => `<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span><span>${f}</span></li>`).join('')}
+          </ul>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center gap-3 pt-2">
+          <a href="https://wa.me/573214165095?text=Hola%20Jardineros%20Nacionales,%20quiero%20cotizar%20el%20servicio:%20${encodeURIComponent(s.title)}" 
+             target="_blank" rel="noopener noreferrer" 
+             class="w-full sm:w-auto flex-1 py-3 px-6 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-sm flex items-center justify-center gap-2 shadow-md">
+            <span>Cotizar este servicio por WhatsApp</span>
+          </a>
+          <button onclick="closeModal('service-modal'); openModal('calculator-modal');" class="w-full sm:w-auto py-3 px-5 rounded-full bg-surface-container text-primary font-semibold text-sm hover:bg-surface-container-highest">
+            Calcular costo aproximado
+          </button>
+        </div>
+      `;
+
+      document.getElementById('service-modal-content').innerHTML = html;
+      openModal('service-modal');
+    }
+
+    // Lightbox Data (including Mosquera Real Photos with Multi-Image Support)
+    const projectData = {
+      101: {
+        title: "Diseño Casa Quinta & Jardín Urbano – Condominio Los Pinos (Mosquera)",
+        location: "Mosquera, Cundinamarca — Condominio Los Pinos",
+        images: [
+          "images/mosquera-los-pinos-1.jpg",
+          "images/mosquera-los-pinos-2.jpg",
+          "images/mosquera-los-pinos-3.jpg",
+          "images/mosquera-los-pinos-4.jpg",
+          "images/mosquera-los-pinos-5.jpg"
+        ],
+        desc: "Diseño botánico y ejecución integral para casa quinta contemporánea en Mosquera. Se conformó una envolvente vegetal de alta densidad con macizos perimetrales de begonias rojas en floración continua, hortensias en tonos azules, lavanda y rosado, gramíneas ornamentales (Cortaderia selloana / pampas grass) y nivelación de prado esmeralda resistente al sol de Sabana Occidente.",
+        duration: "2 semanas",
+        species: "Begonia semperflorens roja, Hydrangea macrophylla policromática, Cortaderia selloana, Canna indica (Achiras), Philodendron/Acanthus, Prado Kikuyo nivelado."
+      },
+      102: {
+        title: "Isla Botánica Central de Achiras & Hortensias – Casa Campestre",
+        location: "Mosquera, Cundinamarca",
+        images: [
+          "images/mosquera-los-pinos-5.jpg",
+          "images/mosquera-los-pinos-1.jpg",
+          "images/mosquera-los-pinos-3.jpg"
+        ],
+        desc: "Diseño de macizo central focal para jardín abierto en casa campestre. Estructuración escalonada con Achiras rojas (Canna indica) de porte alto en el centro, rodeadas por una corona perimetral de hortensias pastel y acabado en tierra vegetal enriquecida.",
+        duration: "5 días",
+        species: "Canna indica roja, Hydrangea macrophylla, Setos de follaje oscuro perimetral, Compost orgánico."
+      },
+      1: {
+        title: "Jardín Silvestre de Montaña en La Calera",
+        location: "La Calera — 2.750 msnm",
+        images: ["https://lh3.googleusercontent.com/aida-public/AB6AXuBN6j_UlW9uZiCe-3wb4qB68q8wZfnMo28K5O4Qs22vh25Knmm8paXSsTfbx1Y5jdogjJfyHxEE-v29FF9W_g2TZrOO04NkuP2Jrb-ULsfVnBtZBjhvVqOFRXy-LkCKwrJ_SFih-Ztrz8E_H2-qf7ZB7Udne6M5d7dljTUrlaU2tOBIqbVDYf7LbyJKGM4qykp_leF1KL8bm-OmCnSpfi9MKXztuaFR7NgdLEXST9YR1O8g2_0fhkSW"],
+        desc: "Diseño paisajístico de 1.800 m² en ladera de alta montaña. Se conformaron terrazas escalonadas en piedra rústica y macizos perennes de salvias púrpuras, lavandas y gramíneas andinas que resisten las heladas y no requieren riego artificial continuo.",
+        duration: "3 semanas",
+        species: "Salvia leucantha, Lavandula angustifolia, Pennisetum setaceum, Festuca glauca, Agapanto enano."
+      },
+      2: {
+        title: "Pérgola Campestre & Césped Inglés en Chía",
+        location: "Finca en Chía, Cundinamarca",
+        images: ["https://lh3.googleusercontent.com/aida-public/AB6AXuAq0YO3VVQURZ9IkIOC905t0naJpQB7mZvb0RIEZOPV2lC0j5jXqgZhFB490ds0MFkItw3PNKXSR7DNv-1JH3M0CN2-9lvmz87fz9IcSr3GZJEvY_DihKr5uYPRseBpqlipQCh7sjnAPeXq0zqg8WiMNXEtszG0cMk3Q3htKtYSqKcN1BrsGWD5VJb1PSgIZ24wlpMHBdWI11z_uMK9CdMFlTlcZsFy4sUIjS_4WlQNAlH-sTyZfIK2"],
+        desc: "Nivelación con láser de 850 m² de prado, instalación de sistema de riego pop-up automatizado y estructura de pérgola con jazmines y buganvilias aclimatadas al frío.",
+        duration: "18 días",
+        species: "Prado Kikuyo seleccionado, Prado Trenza, Jazmín de leche, Wisteria andina, Setos de Eugenia myrtifolia."
+      },
+      3: {
+        title: "Muro Verde & Jardineras en Teca en Rosales",
+        location: "Rosales, Bogotá D.C. — Penthouse",
+        images: ["https://lh3.googleusercontent.com/aida-public/AB6AXuCMWis3caLHWpuzM96J5FZvCMlJplknmw9n6v6Cpy6CvWb-xGpJhVo60_n4ymYtdlgi99pzSd8rZjX3HmHffP1ZZQLYhGFzcTwlgTi3jNPOTcHq3pIHpbx6wbGmr4PRMm4hztZ2TTWevJ_J4SSO4sICGfYPLvXH3RX5v_MhivfAJq65WyLX0amjKAew2-DJZTgH-nWQNTdWZbmETrX3AT_qXfzaIZN4UFirQRsNZWLrcjSQf7OrSN0J"],
+        desc: "Intervención de terraza en piso 9 con muro vegetal hidropónico de 24 m² y jardineras a medida en madera de teca curada, con iluminación LED cálida integrada.",
+        duration: "12 días",
+        species: "Philodendron cordatum, Helecho espada, Bambú enano de sombra, Hiedra variegada, Schefflera arboricola."
+      },
+      4: {
+        title: "Sendero Botánico Floral con Hortensias en Sopó",
+        location: "Hacienda en Sopó, Cundinamarca",
+        images: ["https://lh3.googleusercontent.com/aida-public/AB6AXuD1AL0BFhbX4tS8D1nXQdF-wJ-EFbI2KCv6m3hgTDVKj2dv7PfRtX5TZGInfjCXaeyvjo9jQRbcC05-3cmYm4GXUoAjPPbIt81asnZanXLVW-fVuONP903v4H0OibjGd8rQEfX72zgWe10HM_k-TxY4ScPHRa3J82zgEdvtoJZXHPoyoqtQfbpBVIKOoQN9Hlz2PBko3t5iIOtBYu8Xj_z5DBQFWCDbOm2oM3-PjhHIMc2IGRc6yoee"],
+        desc: "Sendero peatonal de 180 metros lineales en adoquín ecológico flanqueado por más de 400 hortensias azules y blancas con acidificación controlada del suelo para conservar la tonalidad azul zafiro.",
+        duration: "25 días",
+        species: "Hydrangea macrophylla azul y blanca, Buxus sempervirens, Aliso andino, Pasto azul."
+      }
+    };
+
+    function setLightboxImage(imgSrc, element) {
+      document.getElementById('lightbox-main-img').src = imgSrc;
+      const thumbs = document.querySelectorAll('.lightbox-thumb');
+      thumbs.forEach(t => t.classList.remove('ring-4', 'ring-secondary'));
+      if (element) element.classList.add('ring-4', 'ring-secondary');
+    }
+
+    function openLightbox(id) {
+      const p = projectData[id];
+      if (!p) return;
+
+      const images = p.images || [p.image];
+      const mainImg = images[0];
+
+      const thumbsHtml = images.length > 1 ? `
+        <div class="flex items-center gap-2 overflow-x-auto py-2 px-1">
+          ${images.map((img, idx) => `
+            <img src="${img}" onclick="setLightboxImage('${img}', this)" 
+                 class="lightbox-thumb w-20 h-14 object-cover rounded-lg cursor-pointer border-2 border-white shadow hover:opacity-100 ${idx === 0 ? 'ring-4 ring-secondary opacity-100' : 'opacity-70'} transition-all" />
+          `).join('')}
+        </div>
+      ` : '';
+
+      const html = `
+        <div class="w-full bg-black flex flex-col items-center justify-center relative overflow-hidden">
+          <img id="lightbox-main-img" src="${mainImg}" class="w-full max-h-[60vh] object-cover sm:object-contain bg-black/90" alt="${p.title}" />
+          <span class="absolute bottom-4 left-4 px-4 py-1.5 rounded-full bg-primary/90 text-white font-bold text-xs uppercase tracking-wider backdrop-blur-md">${p.location}</span>
+        </div>
+        ${thumbsHtml ? `<div class="bg-surface-container-low px-6 py-2 border-b border-primary/10">${thumbsHtml}</div>` : ''}
+        <div class="p-6 sm:p-8 flex flex-col gap-4">
+          <div class="flex flex-col gap-1">
+            <h2 class="font-serif font-bold text-2xl sm:text-3xl text-primary">${p.title}</h2>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed mt-1">${p.desc}</p>
+          </div>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 bg-surface-container p-4 rounded-2xl text-xs sm:text-sm">
+            <div>
+              <strong class="text-primary block font-bold">Tiempo de ejecución:</strong>
+              <span class="text-on-surface">${p.duration}</span>
+            </div>
+            <div>
+              <strong class="text-primary block font-bold">Especies botánicas utilizadas:</strong>
+              <span class="text-on-surface">${p.species}</span>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center gap-3 pt-2">
+            <a href="https://wa.me/573214165095?text=Hola%20Jardineros%20Nacionales,%20me%20interesa%20un%20proyecto%20similar%20a:%20${encodeURIComponent(p.title)}" 
+               target="_blank" rel="noopener noreferrer" 
+               class="w-full sm:w-auto flex-1 py-3 px-6 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-sm flex items-center justify-center gap-2 shadow-md">
+              <span>Quiero un proyecto similar en mi predio</span>
+            </a>
+            <button onclick="closeModal('lightbox-modal')" class="w-full sm:w-auto py-3 px-6 rounded-full bg-surface-container text-primary font-semibold text-sm">
+              Cerrar
+            </button>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('lightbox-content').innerHTML = html;
+      openModal('lightbox-modal');
+    }
+
+    // Filter Gallery
+    function filterGallery(category, btn) {
+      const buttons = document.querySelectorAll('.gallery-filter-btn');
+      buttons.forEach(b => {
+        b.classList.remove('bg-primary', 'text-white');
+        b.classList.add('text-on-surface-variant');
+      });
+      btn.classList.remove('text-on-surface-variant');
+      btn.classList.add('bg-primary', 'text-white');
+
+      const cards = document.querySelectorAll('.gallery-card');
+      cards.forEach(card => {
+        if (category === 'todos' || card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Blog Article Data
+    const articleData = {
+      1: {
+        title: "Cómo preparar tu jardín de la Sabana para la temporada de heladas",
+        category: "Clima & Heladas",
+        readTime: "5 min de lectura",
+        content: `
+          <p class="text-base leading-relaxed text-on-surface">
+            Durante los meses de enero, febrero, julio y agosto, la Sabana de Bogotá (Mosquera, Chía, Cajicá, Sopó, Suba, Guaymaral) experimenta el fenómeno de las heladas radiativas: madrugadas con temperaturas que descienden entre -2°C y 2°C bajo cero, seguidas de una radiación solar intensa a partir de las 7:00 a.m.
+          </p>
+          
+          <h4 class="font-serif font-bold text-xl text-primary mt-4">1. El poder del acolchado o Mulch orgánico</h4>
+          <p class="text-sm leading-relaxed text-on-surface-variant">
+            Aplica una capa de 5 a 8 cm de corteza de pino, hojas secas trituradas o cascarilla de arroz alrededor de la base de arbustos, hortensias y árboles jóvenes. Esto crea una cámara térmica que aísla las raíces del congelamiento superficial.
+          </p>
+
+          <h4 class="font-serif font-bold text-xl text-primary mt-4">2. Riego preventivo antes del amanecer</h4>
+          <p class="text-sm leading-relaxed text-on-surface-variant">
+            Un error común es regar al mediodía. Lo ideal en temporada de heladas es programar los aspersores entre las 4:30 a.m. y las 5:30 a.m. El agua líquida libera calor latente al enfriarse y lava los cristales de hielo que se depositan sobre el follaje antes de que los primeros rayos del sol los quemen.
+          </p>
+
+          <h4 class="font-serif font-bold text-xl text-primary mt-4">3. Fortalecimiento con Potasio y Silicio</h4>
+          <p class="text-sm leading-relaxed text-on-surface-variant">
+            Tres semanas antes de la temporada crítica, fertiliza con abonos ricos en potasio y silicio orgánico. Estos minerales engrosan las paredes celulares de las plantas, haciéndolas significativamente más elásticas y resistentes al congelamiento.
+          </p>
+        `
+      },
+      2: {
+        title: "Los mejores muros verdes para terrazas en apartamentos bogotanos",
+        category: "Jardinería Urbana",
+        readTime: "4 min de lectura",
+        content: `
+          <p class="text-base leading-relaxed text-on-surface">
+            Tener una terraza o balcón en Bogotá no significa renunciar a la naturaleza. Los jardines verticales permiten crear oasis privados incluso en pisos altos expuestos al viento frío de los Cerros Orientales.
+          </p>
+          
+          <h4 class="font-serif font-bold text-xl text-primary mt-4">Las 5 especies más resistentes al viento bogotano:</h4>
+          <ul class="list-disc pl-5 text-sm text-on-surface-variant space-y-2 mt-2">
+            <li><strong>Philodendron hederaceum:</strong> Follaje verde lustroso, alta tolerancia a semisombra y crecimiento vigoroso.</li>
+            <li><strong>Helecho Macho (Nephrolepis cordifolia):</strong> Excelente volumen y capacidad de filtración de partículas de polvo.</li>
+            <li><strong>Bambú Enano (Pleioblastus pygmaeus):</strong> Resistencia extrema a corrientes de aire directas.</li>
+            <li><strong>Hiedra Miniatura:</strong> Excelente anclaje y cobertura densa durante todo el año.</li>
+            <li><strong>Cintas o Lazos de Amor (Chlorophytum comosum):</strong> Prácticamente indestructibles con riego regular.</li>
+          </ul>
+
+          <h4 class="font-serif font-bold text-xl text-primary mt-4">Claves de instalación técnica</h4>
+          <p class="text-sm leading-relaxed text-on-surface-variant">
+            Asegúrate de que la estructura cuente con lámina trasera impermeable de polietileno de alta densidad para proteger el muro de la copropiedad y una bandeja de recolección inferior para evitar goteras a pisos inferiores.
+          </p>
+        `
+      },
+      3: {
+        title: "Guía de riego inteligente: ahorra agua y mantén tu césped esmeralda",
+        category: "Eficiencia Hídrica",
+        readTime: "6 min de lectura",
+        content: `
+          <p class="text-base leading-relaxed text-on-surface">
+            El pasto Kikuyo y las mezclas de césped trenza son los favoritos en la Sabana por su color vivo y resistencia al tránsito. Sin embargo, regar en exceso es tan perjudicial como la sequía, ya que genera pudrición radicular y proliferación de hongos.
+          </p>
+
+          <h4 class="font-serif font-bold text-xl text-primary mt-4">Frecuencia y tiempos ideales</h4>
+          <p class="text-sm leading-relaxed text-on-surface-variant">
+            En época seca, es preferible un riego profundo de 25 minutos dos veces por semana que riegos superficiales diarios de 5 minutos. El riego profundo obliga a las raíces a crecer hacia abajo en busca de agua, lo que hace al césped 3 veces más resistente a la sequía.
+          </p>
+
+          <h4 class="font-serif font-bold text-xl text-primary mt-4">Sensores de lluvia e higrómetros</h4>
+          <p class="text-sm leading-relaxed text-on-surface-variant">
+            Instalar una válvula solenoide con sensor meteorológico puede reducir tu factura de agua hasta un 45%, cancelando automáticamente los ciclos de aspersión cuando llueve en la Sabana.
+          </p>
+        `
+      }
+    };
+
+    function openArticle(id) {
+      const a = articleData[id];
+      if (!a) return;
+
+      const html = `
+        <div class="flex items-center justify-between text-tertiary border-b border-primary/10 pb-3">
+          <span class="text-xs font-bold uppercase tracking-wider bg-surface-container px-3 py-1 rounded-full">${a.category}</span>
+          <span class="text-xs font-semibold text-outline">${a.readTime}</span>
+        </div>
+        <h2 class="font-serif font-bold text-2xl sm:text-3xl text-primary mt-2">${a.title}</h2>
+        <div class="flex items-center gap-3 text-xs text-on-surface-variant pb-2">
+          <span>Por <strong>Nicanor Torres</strong> (Maestro Paisajista)</span>
+          <span>•</span>
+          <span>Jardineros Nacionales</span>
+        </div>
+        <div class="flex flex-col gap-3 mt-2">
+          ${a.content}
+        </div>
+        <div class="border-t border-primary/10 pt-6 mt-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="text-xs text-on-surface-variant">¿Tienes preguntas sobre el cuidado de tus plantas?</div>
+          <a href="https://wa.me/573214165095?text=Hola%20Nicanor,%20le%C3%AD%20el%20art%C3%ADculo:%20${encodeURIComponent(a.title)}%20y%20quiero%20hacer%20una%20consulta" 
+             target="_blank" rel="noopener noreferrer" 
+             class="px-5 py-2.5 rounded-full bg-primary text-white font-semibold text-xs tracking-wide hover:bg-primary-container transition-all">
+            Consultar con un experto
+          </a>
+        </div>
+      `;
+
+      document.getElementById('article-content').innerHTML = html;
+      openModal('article-modal');
+    }
+
+    // Calculator Form Action
+    function generateQuote(e) {
+      e.preventDefault();
+      const type = document.getElementById('calc-type').value;
+      const area = document.getElementById('calc-area').value;
+      const location = document.getElementById('calc-location').value;
+      
+      const services = [];
+      document.querySelectorAll('input[name="service"]:checked').forEach(cb => {
+        services.push(cb.value);
+      });
+
+      const message = `Hola Nicanor Torres (Jardineros Nacionales), solicito cotización con los siguientes datos:%0A%0A🌿 *Tipo de espacio:* ${encodeURIComponent(type)}%0A📐 *Área aproximada:* ${area} m²%0A📍 *Ubicación:* ${encodeURIComponent(location)}%0A🛠️ *Servicios requeridos:* ${encodeURIComponent(services.join(', ') || 'Asesoría general')}%0A%0AQuedo atento a su respuesta y disponibilidad de visita técnica.`;
+
+      window.open(`https://wa.me/573214165095?text=${message}`, '_blank');
+      closeModal('calculator-modal');
+    }
+
+    // Booking Form Action
+    function submitBooking(e) {
+      e.preventDefault();
+      const name = document.getElementById('book-name').value;
+      const phone = document.getElementById('book-phone').value;
+      const loc = document.getElementById('book-location').value;
+      const notes = document.getElementById('book-notes').value;
+
+      const message = `Hola Jardineros Nacionales, deseo agendar una visita técnica presencial:%0A%0A👤 *Nombre:* ${encodeURIComponent(name)}%0A📞 *Teléfono:* ${encodeURIComponent(phone)}%0A📍 *Dirección/Condominio:* ${encodeURIComponent(loc)}%0A📝 *Detalles:* ${encodeURIComponent(notes || 'Sin observaciones adicionales')}`;
+
+      window.open(`https://wa.me/573214165095?text=${message}`, '_blank');
+      closeModal('contact-modal');
+    }
+  </script>
+
+</body>
+</html>
