@@ -550,202 +550,178 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
 
         <!-- Servicio 1 -->
-        <div onclick="openServiceDetail(1)" class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-primary/5 flex flex-col cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
-          <div class="bg-cover bg-center w-full h-44 relative overflow-hidden" 
-               style="background-image: url('images/mosquera-los-pinos-1.jpg')">
-            <span class="absolute top-3 left-3 px-3 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-[11px] font-bold text-primary uppercase tracking-wider">Integral</span>
-            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="px-3 py-1 bg-white text-primary text-xs font-semibold rounded-full shadow">Ver detalles</span>
-            </div>
-          </div>
-          <div class="p-5 flex flex-col flex-1 justify-between gap-3">
-            <div class="flex flex-col gap-2">
-              <div class="flex items-center gap-2 text-secondary">
-                <span class="material-symbols-outlined text-xl">architecture</span>
-                <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">1. Paisajismo &amp; Diseño Integral</h3>
+        <div onclick="openServiceDetail(1)" class="group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl border border-primary/10 flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+                <span class="material-symbols-outlined text-2xl">architecture</span>
               </div>
-              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
-                Diseño paisajístico de autor en 3D, modelado topográfico, senderos en piedra y siembra selectiva para fincas, casas de campo y zonas comunes.
-              </p>
+              <span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-[10px] font-bold text-primary uppercase tracking-wider">Integral</span>
             </div>
-            <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
-              Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
-            </span>
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors leading-snug">
+              1. Paisajismo &amp; Diseño Integral
+            </h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Diseño paisajístico de autor en 3D, modelado topográfico, senderos en piedra y siembra selectiva para fincas, casas de campo y zonas comunes.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-primary/5 flex items-center justify-between text-xs font-semibold text-primary">
+            <span class="group-hover:underline">Ver detalles del servicio</span>
+            <span class="material-symbols-outlined text-sm transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </div>
         </div>
 
         <!-- Servicio 2 -->
-        <div onclick="openServiceDetail(2)" class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-primary/5 flex flex-col cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
-          <div class="bg-cover bg-center w-full h-44 relative overflow-hidden" 
-               style="background-image: url('images/mosquera-los-pinos-2.jpg')">
-            <span class="absolute top-3 left-3 px-3 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-[11px] font-bold text-tertiary uppercase tracking-wider">Regeneración</span>
-            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="px-3 py-1 bg-white text-primary text-xs font-semibold rounded-full shadow">Ver detalles</span>
-            </div>
-          </div>
-          <div class="p-5 flex flex-col flex-1 justify-between gap-3">
-            <div class="flex flex-col gap-2">
-              <div class="flex items-center gap-2 text-secondary">
-                <span class="material-symbols-outlined text-xl">eco</span>
-                <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">2. Mantenimiento &amp; Recuperación</h3>
+        <div onclick="openServiceDetail(2)" class="group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl border border-primary/10 flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-secondary/15 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all">
+                <span class="material-symbols-outlined text-2xl">eco</span>
               </div>
-              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
-                Rescate de césped marchito o amarillento, desyerbe manual selectivo, oxigenación de raíces y nutrición foliar balanceada.
-              </p>
+              <span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-[10px] font-bold text-secondary uppercase tracking-wider">Regeneración</span>
             </div>
-            <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
-              Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
-            </span>
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors leading-snug">
+              2. Mantenimiento &amp; Recuperación
+            </h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Rescate de césped marchito o amarillento, desyerbe manual selectivo, oxigenación de raíces y nutrición foliar balanceada.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-primary/5 flex items-center justify-between text-xs font-semibold text-primary">
+            <span class="group-hover:underline">Ver detalles del servicio</span>
+            <span class="material-symbols-outlined text-sm transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </div>
         </div>
 
         <!-- Servicio 3 -->
-        <div onclick="openServiceDetail(3)" class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-primary/5 flex flex-col cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
-          <div class="bg-cover bg-center w-full h-44 relative overflow-hidden" 
-               style="background-image: url('images/mosquera-los-pinos-4.jpg')">
-            <span class="absolute top-3 left-3 px-3 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-[11px] font-bold text-primary uppercase tracking-wider">Tecnología</span>
-            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="px-3 py-1 bg-white text-primary text-xs font-semibold rounded-full shadow">Ver detalles</span>
-            </div>
-          </div>
-          <div class="p-5 flex flex-col flex-1 justify-between gap-3">
-            <div class="flex flex-col gap-2">
-              <div class="flex items-center gap-2 text-secondary">
-                <span class="material-symbols-outlined text-xl">water_drop</span>
-                <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">3. Riego Tecnificado &amp; Goteo</h3>
+        <div onclick="openServiceDetail(3)" class="group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl border border-primary/10 flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-tertiary/10 flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-white transition-all">
+                <span class="material-symbols-outlined text-2xl">water_drop</span>
               </div>
-              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
-                Automatización inteligente que ahorra hasta un 40% de agua y asegura hidratación constante frente a las heladas matutinas.
-              </p>
+              <span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-[10px] font-bold text-tertiary uppercase tracking-wider">Tecnología</span>
             </div>
-            <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
-              Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
-            </span>
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors leading-snug">
+              3. Riego Tecnificado &amp; Goteo
+            </h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Automatización inteligente que ahorra hasta un 40% de agua y asegura hidratación constante frente a las heladas matutinas.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-primary/5 flex items-center justify-between text-xs font-semibold text-primary">
+            <span class="group-hover:underline">Ver detalles del servicio</span>
+            <span class="material-symbols-outlined text-sm transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </div>
         </div>
 
         <!-- Servicio 4 -->
-        <div onclick="openServiceDetail(4)" class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-primary/5 flex flex-col cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
-          <div class="bg-cover bg-center w-full h-44 relative overflow-hidden" 
-               style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8HtH3YqNPIU_eSWacy3el0jbYtUUFEAoOunEAVwph_RZizgV8sTEDe8CzETqcGu3CsZL2k1H9F_RxyIwWwhbpzY3W-uNrCtsGXnRd8od6qoqT2cRnMRhWOstYEmtjfrDjkb7gXwhM7W3v_T7Bc_q5yxdf9OcU9zYp5qB3fHOnZa0PnikaBnyRrmcofpDb-o8TsOxYGbvewTqD53vN6H5MJ6kA3TdYYJSe_SvGyvyY0qHdlus4GuZQ')">
-            <span class="absolute top-3 left-3 px-3 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-[11px] font-bold text-tertiary uppercase tracking-wider">Seguridad</span>
-            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="px-3 py-1 bg-white text-primary text-xs font-semibold rounded-full shadow">Ver detalles</span>
-            </div>
-          </div>
-          <div class="p-5 flex flex-col flex-1 justify-between gap-3">
-            <div class="flex flex-col gap-2">
-              <div class="flex items-center gap-2 text-secondary">
-                <span class="material-symbols-outlined text-xl">content_cut</span>
-                <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">4. Poda Técnica &amp; Tala Controlada</h3>
+        <div onclick="openServiceDetail(4)" class="group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl border border-primary/10 flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+                <span class="material-symbols-outlined text-2xl">content_cut</span>
               </div>
-              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
-                Poda de formación, aclareo de copas y retiro seguro de árboles de gran envergadura con certificación en alturas y seguros de ley.
-              </p>
+              <span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-[10px] font-bold text-primary uppercase tracking-wider">Seguridad</span>
             </div>
-            <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
-              Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
-            </span>
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors leading-snug">
+              4. Poda Técnica &amp; Tala Controlada
+            </h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Poda de formación, aclareo de copas y retiro seguro de árboles de gran envergadura con certificación en alturas y seguros de ley.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-primary/5 flex items-center justify-between text-xs font-semibold text-primary">
+            <span class="group-hover:underline">Ver detalles del servicio</span>
+            <span class="material-symbols-outlined text-sm transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </div>
         </div>
 
         <!-- Servicio 5 -->
-        <div onclick="openServiceDetail(5)" class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-primary/5 flex flex-col cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
-          <div class="bg-cover bg-center w-full h-44 relative overflow-hidden" 
-               style="background-image: url('images/la-mesa-gramachina-1.jpg')">
-            <span class="absolute top-3 left-3 px-3 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-[11px] font-bold text-primary uppercase tracking-wider">Campestre</span>
-            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="px-3 py-1 bg-white text-primary text-xs font-semibold rounded-full shadow">Ver detalles</span>
-            </div>
-          </div>
-          <div class="p-5 flex flex-col flex-1 justify-between gap-3">
-            <div class="flex flex-col gap-2">
-              <div class="flex items-center gap-2 text-secondary">
-                <span class="material-symbols-outlined text-xl">spa</span>
-                <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">5. Jardines Temáticos &amp; Quintas</h3>
+        <div onclick="openServiceDetail(5)" class="group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl border border-primary/10 flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-secondary/15 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all">
+                <span class="material-symbols-outlined text-2xl">spa</span>
               </div>
-              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
-                Composiciones estilo Zen, andino silvestre, británico campestre o huertos orgánicos gourmet integrados con armonía espacial.
-              </p>
+              <span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-[10px] font-bold text-secondary uppercase tracking-wider">Campestre</span>
             </div>
-            <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
-              Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
-            </span>
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors leading-snug">
+              5. Jardines Temáticos &amp; Quintas
+            </h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Composiciones estilo Zen, andino silvestre, británico campestre o huertos orgánicos gourmet integrados con armonía espacial.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-primary/5 flex items-center justify-between text-xs font-semibold text-primary">
+            <span class="group-hover:underline">Ver detalles del servicio</span>
+            <span class="material-symbols-outlined text-sm transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </div>
         </div>
 
         <!-- Servicio 6 -->
-        <div onclick="openServiceDetail(6)" class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-primary/5 flex flex-col cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
-          <div class="bg-cover bg-center w-full h-44 relative overflow-hidden" 
-               style="background-image: url('images/porto-bari-chia-2.jpg')">
-            <span class="absolute top-3 left-3 px-3 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-[11px] font-bold text-tertiary uppercase tracking-wider">Microclimas</span>
-            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="px-3 py-1 bg-white text-primary text-xs font-semibold rounded-full shadow">Ver detalles</span>
-            </div>
-          </div>
-          <div class="p-5 flex flex-col flex-1 justify-between gap-3">
-            <div class="flex flex-col gap-2">
-              <div class="flex items-center gap-2 text-secondary">
-                <span class="material-symbols-outlined text-xl">wb_sunny</span>
-                <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">6. Jardines de Sol y Sombra</h3>
+        <div onclick="openServiceDetail(6)" class="group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl border border-primary/10 flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-tertiary/10 flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-white transition-all">
+                <span class="material-symbols-outlined text-2xl">wb_sunny</span>
               </div>
-              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
-                Selección botánica exacta según orientación solar, microclimas bajo dosel arbóreo y patios interiores protegidos del viento.
-              </p>
+              <span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-[10px] font-bold text-tertiary uppercase tracking-wider">Microclimas</span>
             </div>
-            <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
-              Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
-            </span>
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors leading-snug">
+              6. Jardines de Sol y Sombra
+            </h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Selección botánica exacta según orientación solar, microclimas bajo dosel arbóreo y patios interiores protegidos del viento.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-primary/5 flex items-center justify-between text-xs font-semibold text-primary">
+            <span class="group-hover:underline">Ver detalles del servicio</span>
+            <span class="material-symbols-outlined text-sm transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </div>
         </div>
 
         <!-- Servicio 7 -->
-        <div onclick="openServiceDetail(7)" class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-primary/5 flex flex-col cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
-          <div class="bg-cover bg-center w-full h-44 relative overflow-hidden" 
-               style="background-image: url('images/la-mesa-gramachina-2.jpg')">
-            <span class="absolute top-3 left-3 px-3 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-[11px] font-bold text-primary uppercase tracking-wider">Biotecnología</span>
-            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="px-3 py-1 bg-white text-primary text-xs font-semibold rounded-full shadow">Ver detalles</span>
-            </div>
-          </div>
-          <div class="p-5 flex flex-col flex-1 justify-between gap-3">
-            <div class="flex flex-col gap-2">
-              <div class="flex items-center gap-2 text-secondary">
-                <span class="material-symbols-outlined text-xl">compost</span>
-                <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">7. Nutrición &amp; Sanidad Orgánica</h3>
+        <div onclick="openServiceDetail(7)" class="group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl border border-primary/10 flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+                <span class="material-symbols-outlined text-2xl">compost</span>
               </div>
-              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
-                Enmiendas minerales, humus de lombriz californiana y control ecológico de plagas para mantener raíces y follaje vigorosos.
-              </p>
+              <span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-[10px] font-bold text-primary uppercase tracking-wider">Biotecnología</span>
             </div>
-            <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
-              Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
-            </span>
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors leading-snug">
+              7. Nutrición &amp; Sanidad Orgánica
+            </h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Enmiendas minerales, humus de lombriz californiana y control ecológico de plagas para mantener raíces y follaje vigorosos.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-primary/5 flex items-center justify-between text-xs font-semibold text-primary">
+            <span class="group-hover:underline">Ver detalles del servicio</span>
+            <span class="material-symbols-outlined text-sm transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </div>
         </div>
 
         <!-- Servicio 8 -->
-        <div onclick="openServiceDetail(8)" class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-primary/5 flex flex-col cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
-          <div class="bg-cover bg-center w-full h-44 relative overflow-hidden" 
-               style="background-image: url('images/bogota-coservipp-1.jpg')">
-            <span class="absolute top-3 left-3 px-3 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-[11px] font-bold text-tertiary uppercase tracking-wider">Terrazas &amp; Muros</span>
-            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="px-3 py-1 bg-white text-primary text-xs font-semibold rounded-full shadow">Ver detalles</span>
-            </div>
-          </div>
-          <div class="p-5 flex flex-col flex-1 justify-between gap-3">
-            <div class="flex flex-col gap-2">
-              <div class="flex items-center gap-2 text-secondary">
-                <span class="material-symbols-outlined text-xl">fence</span>
-                <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors">8. Muros Verdes &amp; Terrazas</h3>
+        <div onclick="openServiceDetail(8)" class="group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl border border-primary/10 flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-secondary/15 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all">
+                <span class="material-symbols-outlined text-2xl">fence</span>
               </div>
-              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed line-clamp-3">
-                Estructuras hidropónicas vivas y jardines verticales de bajo peso para fachadas, balcones urbanos y terrazas residenciales.
-              </p>
+              <span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-[10px] font-bold text-secondary uppercase tracking-wider">Terrazas &amp; Muros</span>
             </div>
-            <span class="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline">
-              Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
-            </span>
+            <h3 class="font-serif font-bold text-lg text-on-surface group-hover:text-primary transition-colors leading-snug">
+              8. Muros Verdes &amp; Terrazas
+            </h3>
+            <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Estructuras hidropónicas vivas y jardines verticales de bajo peso para fachadas, balcones urbanos y terrazas residenciales.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-primary/5 flex items-center justify-between text-xs font-semibold text-primary">
+            <span class="group-hover:underline">Ver detalles del servicio</span>
+            <span class="material-symbols-outlined text-sm transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </div>
         </div>
 
